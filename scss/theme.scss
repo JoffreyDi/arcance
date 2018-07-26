@@ -1,6 +1,7 @@
 @import '../blunderbuss/blunderbuss.scss';
 header {
     background: $white;
+    color: $steel;
     height: 60px;
     width: 100%;
     position: fixed;
@@ -10,8 +11,36 @@ header {
         margin: auto !important;
         padding: 0 0 0 280px;
     }
-    input {
-        border: 0;
+    .search-bar {
+        &:hover {
+            color: $black-star;
+            .material-icons {
+                color: $black-star;;
+            }
+        }
+        input {
+            border: 0;
+            min-width: 400px;
+            height: 60px;
+            margin: 0 0 0 20px;
+            color: $black-star ;
+            &::placeholder {
+                color: $steel;
+            }
+        }
+    }
+    .separator {
+        width: 1px;
+        height: 80%;
+        background: $pearl-grey;
+    }
+
+    .category-select {
+        padding: 0 20px;
+    }
+    .header-page-link {
+        margin: 0 20px;
+        border-bottom: 3px solid $pearl-grey;
         height: 60px;
     }
 }
