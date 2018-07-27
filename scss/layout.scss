@@ -1,0 +1,118 @@
+header {
+    background: $white;
+    color: $steel;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    .header-content {
+        width: 100%;
+        margin: auto !important;
+        padding: 0 20px 0 280px;
+    }
+    .search-bar {
+        &:hover {
+            color: $black-star;
+            .material-icons {
+                color: $black-star;
+            }
+        }
+        input {
+            border: 0;
+            min-width: 340px;
+            height: 60px;
+            margin: 0 0 0 20px;
+            color: $black-star ;
+            &::placeholder {
+                color: $steel;
+            }
+        }
+    }
+    .separator {
+        width: 1px;
+        height: 80%;
+        background: $pearl-grey;
+    }
+
+    .category-select {
+        padding: 0 20px;
+    }
+
+    .header-link {
+        margin: 0 20px;
+    }
+
+    .header-contentlink {
+        margin: 0 20px;
+        padding: 18px 0 0 0;
+        border-bottom: 3px solid $pearl-grey;
+        align-items: stretch; /* align items in Cross Axis */
+        align-content: stretch; /* Extra space in Cross Axis */
+        display: flex;
+        height: 100%;
+        transition: all 0.3s ease-out;
+        &:hover {
+            cursor: pointer;
+            border-bottom: 3px solid $yellow-submarine;
+            transition: all 0.3s ease-out;
+        }
+    }
+}
+
+.avatar {
+    height: 88px;
+    width: 88px;
+    background: $yellow-submarine;
+    border-radius: 100px;
+}
+
+aside {
+    background: black;
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: $steel;
+    nav {
+        margin-top: $margin-top-base;
+    }
+    ul {
+        padding: 0;
+    }
+    .material-icons {
+        margin: 0 20px 0 0;
+    }
+    .main-link {
+        height: 45px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px 0 20px;
+        border-left: 0px solid;
+        transition: all 0.1s ease-out;
+        &:hover {
+            cursor: pointer;
+            color: $white;
+            border-left: 3px solid $yellow-submarine;
+            background-color: $slate;
+            transition: all 0.3s ease-out;
+            .material-icons {
+                color: $yellow-submarine;
+            }
+        }
+    }
+}
+
+.globalWrapper {
+    margin: 100px 40px 0 280px;
+}
+
+.contentWrapper {
+    margin: 74px auto 40px auto !important;
+    width: 100%;
+}
+
+.title-page {
+    margin: 0 0 40px 0;
+}

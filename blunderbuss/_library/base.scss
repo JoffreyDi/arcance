@@ -47,27 +47,29 @@ a {
 
 /* Headings */
 h1, .h1-like {
-  font-weight: $weight-medium;
+  font-weight: $weight-light;
+  font-size: $font-size-big;
 }
 
 h2, .h2-like {
-  font-weight: $weight-medium;
+  font-weight: $weight-semibold;
+  font-size: $font-size-small;
 }
 
 h3, .h3-like {
-  font-weight: $weight-medium;
+  font-weight: $weight-regular;
 }
 
 h4, .h4-like {
-  font-weight: $weight-medium;
+  font-weight: $weight-regular;
 }
 
 h5, .h5-like {
-  font-weight: $weight-medium;
+  font-weight: $weight-regular;
 }
 
 h6, .h6-like {
-  font-weight: $weight-medium;
+  font-weight: $weight-regular;
 }
 
 /* Vertical rythm */
@@ -297,13 +299,6 @@ kbd {
   font-style: italic;
 }
 
-.noPadding {
-  padding: 0 !important;
-}
-
-.noMargin {
-  margin: 0 !important
-}
 
 .noMarginBottom {
   margin-bottom: 0 !important

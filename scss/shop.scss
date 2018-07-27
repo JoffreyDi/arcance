@@ -1,0 +1,15 @@
+.article-bloc {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 10px;
+    
+    .article-title {
+        font-weight: $weight-semibold;
+    }
+
+    .article-price {
+        color: $grenadine;
+        font-size: 1.8rem;
+    }
+}

@@ -1,100 +1,10 @@
 @import '../blunderbuss/blunderbuss.scss';
-header {
-    background: $white;
-    color: $steel;
-    height: 60px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    .header-content {
-        width: 100%;
-        margin: auto !important;
-        padding: 0 0 0 280px;
-    }
-    .search-bar {
-        &:hover {
-            color: $black-star;
-            .material-icons {
-                color: $black-star;;
-            }
-        }
-        input {
-            border: 0;
-            min-width: 400px;
-            height: 60px;
-            margin: 0 0 0 20px;
-            color: $black-star ;
-            &::placeholder {
-                color: $steel;
-            }
-        }
-    }
-    .separator {
-        width: 1px;
-        height: 80%;
-        background: $pearl-grey;
-    }
+@import 'base.scss';
+@import 'typos.scss';
+@import 'layout.scss';
+@import 'components.scss';
+@import 'shop.scss';
 
-    .category-select {
-        padding: 0 20px;
-    }
-    .header-page-link {
-        margin: 0 20px;
-        border-bottom: 3px solid $pearl-grey;
-        height: 60px;
-    }
-}
 
-.avatar {
-    height: 88px;
-    width: 88px;
-    background: $yellow-submarine;
-    border-radius: 100px;
-}
 
-aside {
-    background: black;
-    height: 100%;
-    width: 240px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    color: $steel;
-    nav {
-        margin-top: $margin-top-base;
-    }
-    ul {
-        padding: 0;
-    }
-    .material-icons {
-        margin: 0 20px 0 0;
-    }
-    .main-link {
-        height: 45px;
-        display: flex;
-        align-items: center;
-        padding: 0 20px 0 20px;
-        border-left: 0px solid;
-        transition: all 0.3s ease-out;
-        &:hover {
-            cursor: pointer;
-            color: $white;
-            border-left: 3px solid $yellow-submarine;
-            background-color: $slate;
-            transition: all 0.3s ease-out;
-            .material-icons {
-                color: $yellow-submarine;
-            }
-        }
-    }
-}
 
-.globalWrapper {
-    margin: 0 0 0 280px;
-}
-
-.contentWrapper {
-    margin: 74px auto 40px auto !important;
-    width: 100%;
-}

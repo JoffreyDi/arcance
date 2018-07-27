@@ -1,0 +1,51 @@
+button {
+  background: linear-gradient($white, $lunar-white);
+    -webkit-appearance: none;
+    border: 1px solid $pearl-grey;
+    color: $steel;
+    font-size: 1.2rem;
+    font-weight: $weight-semibold;
+    transition: .3s ease-in;
+    height: 28px;
+    width: auto;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover {
+      border: 1px solid $steel;
+      color: $chocolate;
+        transition: .3s ease-in-out;
+        color: $slate;
+      }
+      &:disabled {
+        background: #ccc;
+        color: #ff00cc;
+        cursor: not-allowed;
+      }
+  }
+  
+  .button-action {
+    @extend button;
+    width: 130px;
+    height: 40px;
+    margin: 0 0 25px 0;
+    border-radius: 3px;
+  }
+  
+  
+  .button-classic {
+    @extend button;
+    width: 130px;
+    height: 40px;
+    margin: 0 0 25px 0;
+    border-radius: 3px;
+  }
+
+  .button-special {
+    @extend button;
+    width: 130px;
+    height: 40px;
+    margin: 0 0 25px 0;
+    border-radius: 3px;
+  }
+  
