@@ -5,10 +5,12 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+    z-index: 10;
     .header-content {
         width: 100%;
         margin: auto !important;
-        padding: 0 20px 0 280px;
+        padding: 0 40px 0 280px;
     }
     .search-bar {
         &:hover {
@@ -17,37 +19,44 @@ header {
                 color: $black-star;
             }
         }
+        .search-icon {
+            min-width: 24px;
+        }
         input {
             border: 0;
-            min-width: 340px;
+            width: auto;
+            min-width: 280px;
             height: 60px;
-            margin: 0 0 0 20px;
-            color: $black-star ;
+            padding: 0 0 0 20px;
+            color: $black-star;
             &::placeholder {
                 color: $steel;
             }
         }
+    }
+    .icon-search-mobile,
+    .icon-profil-mobile {
+        display: none;
     }
     .separator {
         width: 1px;
         height: 80%;
         background: $pearl-grey;
     }
-
     .category-select {
         padding: 0 20px;
     }
-
     .header-link {
         margin: 0 20px;
     }
-
     .header-contentlink {
         margin: 0 20px;
         padding: 18px 0 0 0;
         border-bottom: 3px solid $pearl-grey;
-        align-items: stretch; /* align items in Cross Axis */
-        align-content: stretch; /* Extra space in Cross Axis */
+        align-items: stretch;
+        /* align items in Cross Axis */
+        align-content: stretch;
+        /* Extra space in Cross Axis */
         display: flex;
         height: 100%;
         transition: all 0.3s ease-out;
@@ -59,11 +68,39 @@ header {
     }
 }
 
-.avatar {
-    height: 88px;
-    width: 88px;
-    background: $yellow-submarine;
-    border-radius: 100px;
+.myaccount {
+    .myaccount-avatar {
+        height: 88px;
+        width: 88px;
+        background: $yellow-submarine;
+        border-radius: 100px;
+        margin: 40px auto 20px auto;
+        display: flex;
+        align-items: center;
+        .stand-number {
+            font-size: 2.2rem;
+            color: $chocolate;
+            display: block;
+            width: auto;
+            width: 100%;
+            text-align:center;
+        }
+    }
+    .myaccount-select {
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .user-panel {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 240px;
+        height: 200px;
+        background-color: $yellow-submarine;
+        display: none;
+    }
 }
 
 aside {
@@ -75,6 +112,8 @@ aside {
     left: 0;
     bottom: 0;
     color: $steel;
+    display: block;
+    z-index: 20;
     nav {
         margin-top: $margin-top-base;
     }
@@ -106,6 +145,7 @@ aside {
 
 .globalWrapper {
     margin: 100px 40px 0 280px;
+    transition: margin-left .5s;
 }
 
 .contentWrapper {
@@ -115,4 +155,100 @@ aside {
 
 .title-page {
     margin: 0 0 40px 0;
+}
+
+.burger-button {
+    display: none;
+}
+
+@media (max-width: $extra-large) {
+    .header-contentlink {
+        display: none !important;
+    }
+}
+
+@media (max-width: $large) {
+    header {
+        height: 52px;
+        .header-content {
+            padding: 0 20px 0 74px !important;
+        }
+        .search-bar {
+            input {
+                height: 44px;
+            }
+        }
+        .langage-dropdown {
+            margin: 0 !important;
+        }
+        .header-link {
+            margin: 0 10px;
+        }
+    }
+    .globalWrapper {
+        margin: 100px 20px 0 20px;
+    }
+    .contentWrapper {
+        margin: 74px auto 40px auto !important;
+    }
+    aside {
+        transition: 0.5s;
+        margin-left: -240px;
+        overflow-x: hidden;
+    }
+    .burger-button {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 52px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        z-index: 13;
+        .material-icons {
+            margin: auto;
+            font-size: 3.2rem;
+            color: $chocolate;
+        }
+        background:$yellow-submarine;
+    }
+}
+
+@media (max-width: $medium) {
+    header {
+        .separator {
+            display: none;
+        }
+        .icon-search-mobile,
+        .icon-profil-mobile {
+            display: block !important;
+            padding: 0 10px;
+        }
+        .icon-shopping-card {
+            padding: 0px;
+        }
+        .langage-dropdown {
+            padding: 0 10px !important;
+            margin: 0 !important;
+        }
+        .category-select {
+            display: none;
+        }
+        .search-bar {
+            .search-icon {
+                min-width: 24px;
+                display: none;
+            }
+            input {
+                display: none;
+            }
+        }
+        .header-contentlink {
+            display: none !important;
+        }
+    }
+    .slideshow-container {
+        display: none;
+    }
 }

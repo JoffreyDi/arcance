@@ -1,15 +1,49 @@
 .article-bloc {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 0 0 10px;
-    
-    .article-title {
-        font-weight: $weight-semibold;
+    display: flex;
+    margin: 0 0 40px 0;
+    img {
+        height: 100px !important;
+        min-width: 100px;
     }
+}
 
+.article-infos {
+    display: block;
+    margin: 0 0 0 20px;
+    padding: 0 40px 0 0;
+    .article-title,
+    .article-price {
+        font-weight: $weight-semibold;
+        padding: 0 0 5px 0;
+    }
     .article-price {
         color: $grenadine;
         font-size: 1.8rem;
     }
 }
+
+.no-margin {
+    margin: 0;
+}
+
+@media (max-width: $extra-large) {
+
+    .article-bloc {
+        margin: 0 0 20px 0;
+        img {
+            height:60px !important;
+            min-width: 60px;
+        }
+    }
+
+    .article-infos {
+        margin: 0 0 0 10px;
+        padding: 0 20px 0 0;
+    }
+
+        .article-infos {
+            button {
+                display: none
+            }
+        }
+    }
