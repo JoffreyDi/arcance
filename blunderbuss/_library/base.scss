@@ -254,6 +254,13 @@ kbd {
   line-height: normal;
 }
 
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
 
 .flex {
   display: flex;
@@ -290,16 +297,15 @@ kbd {
   justify-content: flex-end;
 }
 
-.strong {
-  font-weight: 700;
-  display: inline;
-}
-
-.italic {
-  font-style: italic;
-}
 
 
-.noMarginBottom {
-  margin-bottom: 0 !important
+@media (max-width: $small) {
+  .desktop {
+    display: none;
+  }
+  
+  .mobile {
+    display: block;
+  }
+  
 }

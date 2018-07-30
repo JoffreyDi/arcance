@@ -8,9 +8,9 @@
 // Best practice is Mobile First: (min-width: $breakpoint)
 $tiny        : 480px !default; // or 'em' if you prefer, of course
 $small       : 576px !default;
-$medium      : 660px !default;
-$large       : 960px !default;
-$extra-large : 1305px !default;
+$medium      : 768px !default;
+$large       : 992px !default;
+$extra-large : 1280px !default;
 
 // ----------
 // Fonts zone

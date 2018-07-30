@@ -1,88 +1,7 @@
-<!doctype html>
-<html lang="fr">
+<?php include 'header.php'; ?>
+<?php include 'nav.php'; ?>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <title>Titre de la page</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/theme.css">
-
-</head>
-
-<body>
-
-  <div id="overlay" class="overlay"  onclick="closeNav()"></div>
-<div onclick="openNav()" class="burger-button">            
-  <i class="material-icons md-dark search-icon">menu</i>
-</div>
-
-  <header class="align-item-center">
-    <div class="header-content">
-      <div class="row spaceBetween">
-
-        <div class="search-section flex">
-          <div class="search-bar align-item-center">
-            <i class="material-icons md-dark search-icon">search</i>
-            <input type="text" placeholder="Rechercher dans la boutique">
-          </div>
-          <div class="separator"></div>
-          <div class="category-select align-item-center">
-            Catégories
-            <i class="material-icons md-dark">arrow_drop_down</i>
-          </div>
-          <div class="separator"></div>
-        </div>
-        <div class="infos-section align-item-center flex-end">
-          <div class="header-contentlink">Réglement</div>
-          <div class="header-contentlink">Informations</div>
-          <div class="header-contentlink">Informations</div>
-          <div class="header-link align-item-center langage-dropdown">FR
-            <i class="material-icons md-dark">arrow_drop_down</i>
-          </div>
-          <i class="icon-search-mobile material-icons md-dark">search</i>
-          <i class="icon-profil-mobile material-icons md-dark">account_circle</i>
-          <i class="icon-shopping-card header-link material-icons md-dark">shopping_cart</i>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-  <aside id="aside">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <section class="myaccount">
-    <div class="myaccount-avatar">
-      <span class="stand-number">G65</span>
-    </div>
-    <div class="myaccount-select">Mon compte <i class="material-icons md-dark">arrow_drop_down</i></div>
-
-    <div class="user-panel">
-        <img src="assets/slideshow/image2.jpg" style="width:100%">
-      <span class="user-panel-close">close ta race</span>
-
-    </div>
-
-    </section>
-
-    <nav>
-      <ul>
-        <li class="main-link">
-          <i class="material-icons md-dark">face</i>Boutique</li>
-        <li class="main-link">
-          <i class="material-icons md-dark">face</i>Mon stand</li>
-        <li class="main-link">
-          <i class="material-icons md-dark">face</i>Mes commandes</li>
-        <li class="main-link">
-          <i class="material-icons md-dark">face</i>Mes messages</li>
-      </ul>
-    </nav>
-
-  </aside>
-
-
-  <div id="globalWrapper"  class="globalWrapper">
+  <div id="globalWrapper" class="globalWrapper">
     <div class="contentWrapper">
       <div class="title-page">
         <h1>Bienvenue Joffrey Dieudonat !</h1>
@@ -129,7 +48,8 @@
             <div class="article-bloc col-L4 col-M6 col-S12">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
-                <div class="article-title">Ecran LED mural 32''</div>
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
@@ -138,6 +58,7 @@
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
@@ -145,31 +66,35 @@
             <div class="article-bloc col-L4 col-M6 col-S12">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
-                <div class="article-title">Ecran LED mural 32''</div>
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
-            <div class="article-bloc col-L4 col-M6 col-S12 no-margin">
+            <div class="article-bloc col-L4 col-M6 col-S12">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
-                <div class="article-title">Ecran LED mural 32''</div>
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
-            <div class="article-bloc col-L4 col-M6 col-S12 no-margin">
+            <div class="article-bloc col-L4 col-M6 col-S12">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
-                <div class="article-title">Ecran LED mural 32''</div>
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
-            <div class="article-bloc col-L4 col-M6 col-S12 no-margin">
+            <div class="article-bloc col-L4 col-M6 col-S12">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
-                <div class="article-title">Ecran LED mural 32''</div>
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
@@ -182,6 +107,35 @@
         <div class="col-L4 card">
           <h2 class="card-title">vitrine</h2>
           <div class="card-content">
+            <div class=" article-bloc  row-nowrap">
+              <img src="assets/products/product-placeholder.jpg">
+              <div class="article-infos">
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-price">484,24 €</div>
+                <button>ajouter au panier</button>
+              </div>
+            </div>
+            <div class="row">
+              <img src="assets/products/product-placeholder.jpg">
+              <div class="article-infos">
+                <div class="article-title">Ecran LED mural 32''</div>
+                <div class="article-price">484,24 €</div>
+                <button>ajouter au panier</button>
+              </div>
+            </div>
+            <div class="row">
+              <img src="assets/products/product-placeholder.jpg">
+              <div class="article-infos">
+                <div class="article-title">Ecran LED mural 32''</div>
+                <div class="article-price">484,24 €</div>
+                <button>ajouter au panier</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-L4 card">
+          <h2 class="card-title">vitrine</h2>
+          <div class="card-content">
             <div class="row">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-bloc">
@@ -237,35 +191,6 @@
             </div>
           </div>
         </div>
-        <div class="col-L4 card">
-          <h2 class="card-title">vitrine</h2>
-          <div class="card-content">
-            <div class="row">
-              <img src="assets/products/product-placeholder.jpg">
-              <div class="article-bloc">
-                <div class="article-title">Ecran LED mural 32''</div>
-                <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
-              </div>
-            </div>
-            <div class="row">
-              <img src="assets/products/product-placeholder.jpg">
-              <div class="article-bloc">
-                <div class="article-title">Ecran LED mural 32''</div>
-                <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
-              </div>
-            </div>
-            <div class="row">
-              <img src="assets/products/product-placeholder.jpg">
-              <div class="article-bloc">
-                <div class="article-title">Ecran LED mural 32''</div>
-                <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
-              </div>
-            </div>
-          </div>
-          </div>
         </div>
       </section>
 
@@ -273,6 +198,6 @@
       <script src="js/jquery.js"></script>
       <script src="js/script.js"></script>
 
-    </body>
+</body>
 
 </html>
