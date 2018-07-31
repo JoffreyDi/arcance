@@ -103,94 +103,102 @@
         </div>
       </section>
 
-      <section class="row-nowrap featured-articles">
-        <div class="col-L4 card">
+      <section class="row featured-articles">
+        <div class="col-L4 col-M12 card">
           <h2 class="card-title">vitrine</h2>
           <div class="card-content">
-            <div class=" article-bloc  row-nowrap">
+            <div class=" article-bloc row-nowrap">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
-            <div class="row">
+            <div class="article-bloc row-nowrap">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
-                <div class="article-title">Ecran LED mural 32''</div>
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
-            <div class="row">
+            <div class="article-bloc row-nowrap">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
-                <div class="article-title">Ecran LED mural 32''</div>
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-L4 card">
+        <div class="col-L4 col-M12 card">
           <h2 class="card-title">vitrine</h2>
           <div class="card-content">
-            <div class="row">
+            <div class=" article-bloc row-nowrap">
               <img src="assets/products/product-placeholder.jpg">
-              <div class="article-bloc">
-                <div class="article-title">Ecran LED mural 32''</div>
+              <div class="article-infos">
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
-            <div class="row">
+            <div class="article-bloc row-nowrap">
               <img src="assets/products/product-placeholder.jpg">
-              <div class="article-bloc">
-                <div class="article-title">Ecran LED mural 32''</div>
+              <div class="article-infos">
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
-            <div class="row">
+            <div class="article-bloc row-nowrap">
               <img src="assets/products/product-placeholder.jpg">
-              <div class="article-bloc">
-                <div class="article-title">Ecran LED mural 32''</div>
+              <div class="article-infos">
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-L4 card">
+        <div class="col-L4 col-M12 card">
           <h2 class="card-title">vitrine</h2>
           <div class="card-content">
-            <div class="row">
+            <div class="article-bloc row-nowrap">
               <img src="assets/products/product-placeholder.jpg">
-              <div class="article-bloc">
-                <div class="article-title">Ecran LED mural 32''</div>
+              <div class="article-infos">
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
-            <div class="row">
+            <div class="article-bloc row-nowrap">
               <img src="assets/products/product-placeholder.jpg">
-              <div class="article-bloc">
-                <div class="article-title">Ecran LED mural 32''</div>
+              <div class="article-infos">
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
-            <div class="row">
+            <div class="article-bloc row-nowrap">
               <img src="assets/products/product-placeholder.jpg">
-              <div class="article-bloc">
-                <div class="article-title">Ecran LED mural 32''</div>
+              <div class="article-infos">
+                <div class="article-title">Set memos autocollants eastmateus...</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
                 <button>ajouter au panier</button>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
 

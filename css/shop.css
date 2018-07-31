@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$weight-semibold".
-        on line 16 of scss/shop.scss
+        on line 19 of scss/shop.scss
 
-11:     display: block;
-12:     margin: 0 0 0 20px;
-13:     padding: 0 20px 0 0;
-14:     .article-title,
-15:     .article-price {
-16:         font-weight: $weight-semibold;
-17:         padding: 0 0 5px 0;
-18:     }
-19:     .article-description {
-20:         padding: 0 0 5px 0;
+14:     .article-title {
+15:         padding: 0 10px 5px 0;
+16:     }
+17:     .article-title,
+18:     .article-price {
+19:         font-weight: $weight-semibold;
+20:         padding: 0 10px 5px 0;
 21:     }
+22:     .article-description {
+23:         padding: 0 10px 5px 0;
+24:     }
 
 Backtrace:
-scss/shop.scss:16
+scss/shop.scss:19
 /usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -80,4 +80,4 @@ scss/shop.scss:16
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$weight-semibold\".\A         on line 16 of scss/shop.scss\A \A 11:     display: block;\A 12:     margin: 0 0 0 20px;\A 13:     padding: 0 20px 0 0;\A 14:     .article-title,\A 15:     .article-price {\A 16:         font-weight: $weight-semibold;\A 17:         padding: 0 0 5px 0;\A 18:     }\A 19:     .article-description {\A 20:         padding: 0 0 5px 0;\A 21:     }"; }
+  content: "Error: Undefined variable: \"$weight-semibold\".\A         on line 19 of scss/shop.scss\A \A 14:     .article-title {\A 15:         padding: 0 10px 5px 0;\A 16:     }\A 17:     .article-title,\A 18:     .article-price {\A 19:         font-weight: $weight-semibold;\A 20:         padding: 0 10px 5px 0;\A 21:     }\A 22:     .article-description {\A 23:         padding: 0 10px 5px 0;\A 24:     }"; }

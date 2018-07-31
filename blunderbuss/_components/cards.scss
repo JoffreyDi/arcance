@@ -9,14 +9,28 @@
         border-bottom: 1px solid $pearl-grey;
     }
     .card-content {
-        padding: 20px;
+        padding: 20px 20px 0 20px;
     }
-
 }
 
-// .col-L4, .col-M6 {
-//    margin-right: 40px;
-//    &:last-child {
-//        margin-right: 0px;
-//    }
-//}
+.col-L4,
+.col-M6 {
+    margin-right: 40px;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.col-M12 {
+    margin-right: 0 !important;
+}
+
+.article-description {
+    display: none !important;
+}
+
+@media (max-width:$large) {
+        .article-description {
+            display: block !important;
+        }
+}

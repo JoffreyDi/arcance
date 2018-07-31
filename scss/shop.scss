@@ -1,23 +1,26 @@
 .article-bloc {
     display: flex;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
     img {
-        height: 100px !important;
-        min-width: 100px;
+        height: 84px !important;
+        min-width: 84px;
     }
 }
 
 .article-infos {
     display: block;
     margin: 0 0 0 20px;
-    padding: 0 20px 0 0;
+    padding: 0 0 0 0;
+    .article-title {
+        padding: 0 10px 5px 0;
+    }
     .article-title,
     .article-price {
         font-weight: $weight-semibold;
-        padding: 0 0 5px 0;
+        padding: 0 10px 5px 0;
     }
     .article-description {
-        padding: 0 0 5px 0;
+        padding: 0 10px 5px 0;
     }
     .article-price {
         color: $grenadine;
@@ -25,21 +28,11 @@
     }
 }
 
-.no-margin {
-    margin: 0;
+.featured-articles {
+    flex-wrap: nowrap;
 }
 
 @media (max-width: $extra-large) {
-    .article-infos {
-        margin: 0 0 0 10px;
-        padding: 0 20px 0 0;
-        button {
-            display: none
-        }
-    }
-}
-
-@media (max-width: $small) {
     .article-bloc {
         img {
             height: 60px !important;
@@ -47,9 +40,15 @@
         }
     }
     .article-infos {
-        padding: 0;
+        margin: 0 0 0 10px;
         button {
             display: none
         }
+    }
+}
+
+@media (max-width: $large) {
+    .featured-articles {
+        flex-wrap: wrap;
     }
 }
