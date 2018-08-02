@@ -21,9 +21,6 @@
     }
 }
 
-.col-M12 {
-    margin-right: 0 !important;
-}
 
 .article-description {
     display: none !important;
@@ -33,4 +30,10 @@
         .article-description {
             display: block !important;
         }
+}
+
+@media (max-width:$large) {
+    .col-M12 {
+        margin-right: 0 !important;
+    }
 }
