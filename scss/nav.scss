@@ -45,7 +45,7 @@ header {
     }
     .header-link {
         margin: 0 20px;
-        height: 58px;
+        height: 60px;
         cursor: pointer;
         &:hover {
             color: $black-star;
@@ -80,7 +80,7 @@ header {
         width: 88px;
         background: $yellow-submarine;
         border-radius: 100px;
-        margin: 40px auto 20px auto;
+        margin: 0 auto 20px auto;
         display: flex;
         align-items: center;
         .stand-number {
@@ -97,20 +97,60 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        transition: all 0.1s ease-out;
+        &:hover {
+            color: $yellow-submarine;
+            transition: all 0.1s ease-out;
+            .material-icons {
+                color: $yellow-submarine;
+            }
+        }
     }
     .user-panel {
         position: absolute;
         top: 0;
         left: 0;
         width: 240px;
-        height: 200px;
         background-color: $yellow-submarine;
         display: none;
+        .user-panel-content {
+            color: $chocolate;
+            padding: 20px;
+            p {
+                border-bottom: 1px solid $chocolate;
+                font-size: $font-size-small;
+                padding: 0 0 20px 0;
+            }
+            a {
+                color: $chocolate;
+                &:hover {
+                    color: $black-star;
+                }
+            }
+        }
+        .close-panel {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 0;
+            right: 0;
+            padding: 3px;
+            background: $yellow-submarine;
+            text-align: center;
+            cursor: pointer;
+            .material-icons {
+                color: $chocolate;
+            }
+            &:hover {
+                background: $yellow-hover;
+            }
+        }
     }
 }
 
 aside {
-    background: black;
+    background: $black-star;
     height: 100%;
     width: 240px;
     position: fixed;
@@ -148,6 +188,37 @@ aside {
             }
         }
     }
+    .aside-bloc-infos {
+        position: fixed;
+        bottom: 0;
+        color: $white;
+        width: 240px;
+        font-size: $font-size-small;
+        .aside-bloc-infos-content {
+            padding: 20px;
+            .title {
+                font-size: $font-size-base;
+                margin: 10px 0 0 0;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+        .bloc-help-phone {
+            background: $yellow-submarine;
+            color: $chocolate;
+            padding: 20px;
+            .material-icons {
+                color: $chocolate;
+            }
+            .txt {
+                flex: 1;
+            }
+            .phone-number {
+                display: block;
+                font-size: 1.6rem;
+            }
+        }
+    }
 }
 
 .aside-open {
@@ -163,14 +234,27 @@ aside {
     display: none;
 }
 
+.categories-desktop {
+    display: block
+}
+
+.categories-mobile {
+    display: none
+}
+
 .dropdown {
     background: $white;
     height: 60px;
-
-    .material-icons {
-        padding: 0 20px 0 0;
+    .dropdown-select-link {
+        width: 122px;
+        color: $steel;
+        a {
+            color: $steel;
+        }
+        .material-icons {
+            padding: 0 15px 0 0;
+        }
     }
-
     .dropdown-select-category-link {
         width: 100px !important;
         padding: 20px 5px 5px 20px !important;
@@ -191,20 +275,20 @@ aside {
             text-decoration: none;
         }
         &:last-child {
-            padding-bottom: 15px !important;       
+            padding-bottom: 15px !important;
         }
     }
     ul ul {
         position: absolute;
         left: 0;
-        top: 50px;
+        top: 48px;
         background: #fff;
         display: none;
     }
     ul ul ul {
         left: 100%;
         top: 0;
-        background: #999;
+        background: #fff;
     }
     li:hover>ul {
         display: block;
@@ -219,7 +303,6 @@ aside {
 
 @media (max-width: $large) {
     header {
-        height: 52px;
         .header-content {
             padding: 0 20px 0 74px !important;
         }
@@ -258,8 +341,8 @@ aside {
         top: 0;
         left: 0;
         z-index: 2;
-        width: 52px;
-        height: 52px;
+        width: 60px;
+        height: 60px;
         display: flex;
         align-items: center;
         z-index: 13;
@@ -278,6 +361,12 @@ aside {
 
 @media (max-width: $medium) {
     header {
+        .categories-desktop {
+            display: none;
+        }
+        .categories-mobile {
+            display: block;
+        }
         .separator {
             display: none;
         }
@@ -288,24 +377,26 @@ aside {
         .icon-shopping-card {
             padding: 0px;
         }
-        .language-dropdown {
-            padding: 0 10px !important;
-            margin: 0 !important;
-        }
-        .category-select {
-            display: none;
-        }
         .search-bar {
-            .search-icon {
-                min-width: 24px;
-                display: none;
-            }
-            input {
-                display: none;
-            }
+            display: none;
         }
         .header-contentlink {
             display: none !important;
+        }
+    }
+}
+
+@media (max-height:768px) {
+
+    aside {
+        overflow-x: auto;
+        nav {
+           .nav-links {
+               margin: 0 0 0 0;
+           }
+        }
+        .aside-bloc-infos {
+            position: inherit !important;
         }
     }
 }

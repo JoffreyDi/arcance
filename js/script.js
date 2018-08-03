@@ -27,7 +27,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-$( ".user-panel-close" ).click(function() {
+$( ".close-panel" ).click(function() {
   $( ".user-panel" ).slideUp( "slow", function() {
     // Animation complete.
   });
@@ -51,27 +51,3 @@ function closeNav() {
   document.getElementById("overlay").style.left = "-100%";
 }
 
-
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function languageDropdown() {
-  document.getElementById("myDropdown").classList.toggle("show");
-  document.getElementById("link").style.color = "black";
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-if (!event.target.matches('.langage-dropdown')) {
-
-  var dropdowns = document.getElementsByClassName("dropdown-content");
-  var i;
-  for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-      openDropdown.classList.remove('show');
-      document.getElementById("link").style.color = "";
-    }
-  }
-}
-}
