@@ -5,14 +5,13 @@
   <div class="contentWrapper">
     <div class="title-page">
       <h1>Vos informations de facturation</h1>
-      <a href="index.php">Accueil boutique »</a> Catégorie offre packagé
+      <a href="panier.php">Panier »</a> Informations de facturation
     </div>
 
     <section class="row row-card flex-start">
       <div class="col-L8 col-M12 card">
-        <h2 class="card-title">Liste des articles dans la catégorie</h2>
+        <h2 class="card-title">Informations de facturation</h2>
         <div class="card-content form-card">
-
 
           <div class="line-form">
             <label>Civilié</label>
@@ -49,38 +48,65 @@
             </div>
           </div>
 
-          <div class="line-form">
-            <label>Adresse</label>
-            <input type="text">
+          <div class="row">
+            <div class="line-form">
+              <label>Adresse</label>
+              <input type="text">
+            </div>
+            <div class="line-form">
+              <label>Complément d'adresse</label>
+              <input type="text">
+            </div>
           </div>
 
-          <div class="line-form">
-            <label>Complément d'adresse</label>
-            <input type="text">
-          </div>
-
-          <div class="line-form">
-            <label>Code postal</label>
-            <input type="text">
-          </div>
-
-          <div class="line-form">
-            <label>Ville</label>
-            <input type="text">
+          <div class="row">
+            <div class="line-form">
+              <label>Code postal</label>
+              <input type="text">
+            </div>
+            <div class="line-form">
+              <label>Ville</label>
+              <input type="text">
+            </div>
           </div>
 
           <div class="line-form">
             <label>Pays</label>
+            <select id="pays" name="pays">
+              <option value="fr">France</option>
+              <option value="es">Espagne</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <div class="line-form">
+              <label>Téléphone</label>
+              <input type="text">
+            </div>
+            <div class="line-form">
+              <label>Téléphone portable</label>
+              <input type="text">
+            </div>
+          </div>
+
+          <div class="line-form">
+            <label>Adresse mail</label>
             <input type="text">
           </div>
 
+          <div class="line-form">
+            <label>Ma référence</label>
+            <input type="text">
+          </div>
 
+          <button class="button-action">Valider le formulaire</button>
         </div>
+
       </div>
 
 
       <div class="col-L4 col-M12 card bloc-details">
-        <h2 class="card-title">filtres</h2>
+        <h2 class="card-title">Récapitulatif</h2>
         <div class="card-content">
 
           <div class="row border spaceBetween">

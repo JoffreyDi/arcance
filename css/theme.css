@@ -622,10 +622,10 @@ q {
 
 q,
 .q {
-  quotes: "ÔÇ£" "ÔÇØ" "ÔÇÿ" "ÔÇÖ"; }
+  quotes: "“" "”" "‘" "’"; }
   q:lang(fr),
   .q:lang(fr) {
-    quotes: "┬½\00a0" "\00a0┬╗" "ÔÇ£" "ÔÇØ"; }
+    quotes: "«\00a0" "\00a0»" "“" "”"; }
 
 hr {
   display: block;
@@ -691,6 +691,9 @@ kbd {
 .flex-start {
   align-items: flex-start; }
 
+.relative {
+  position: relative; }
+
 @media (max-width: 576px) {
   .desktop {
     display: none; }
@@ -755,6 +758,7 @@ kbd {
   margin: 0 0 20px 0; }
   .line-form select,
   .line-form input {
+    -webkit-appearance: none;
     width: 100%;
     padding: 10px;
     border: 1px solid #DEE0E4;
@@ -762,6 +766,100 @@ kbd {
   .line-form label {
     margin: 0 0 5px 0;
     font-weight: 600; }
+
+.line-radio {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.line-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid #9EA3AD; }
+
+.line-radio:hover input ~ .checkmark {
+  border: 1px solid #FFD100; }
+
+.line-radio input:checked ~ .checkmark {
+  background: #fff;
+  border: 1px solid #FFD100; }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.line-radio input:checked ~ .checkmark:after {
+  display: block; }
+
+.line-radio .checkmark:after {
+  top: 1px;
+  left: 1px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #FFD100; }
+
+.checkbox-line {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.checkbox-line input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+.checkmarkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #9EA3AD; }
+
+.checkbox-line:hover input ~ .checkmarkbox {
+  border: 1px solid #FFD100; }
+
+.checkbox-line input:checked ~ .checkmarkbox {
+  border: 1px solid #FFD100; }
+
+.checkmarkbox:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.checkbox-line input:checked ~ .checkmarkbox:after {
+  display: block; }
+
+.checkbox-line .checkmarkbox:after {
+  left: 1px;
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  background: #FFD100;
+  border-width: 0 3px 3px 0; }
 
 /* Slideshow container */
 .slideshow-container {
@@ -887,7 +985,7 @@ button, .button-action, .button-classic, .button-special, .button-special.second
   background: linear-gradient(#FFD100, #FFBA00);
   border: none;
   color: #8F6932;
-  font-size: 1.4rem;
+  font-size: 1.4rem !important;
   height: 35px;
   width: calc(100% - 40px);
   margin: 0 20px 20px 20px; }
@@ -1341,13 +1439,31 @@ aside {
     border-top: 0px; }
 .bloc-details button, .bloc-details .button-action, .bloc-details .button-classic, .bloc-details .button-special {
   font-size: 1rem; }
+.bloc-details .button-classic {
+  float: right; }
 
-.form-card .line-form {
-  width: 300px; }
-.form-card .row .line-form {
-  margin-right: 40px; }
-  .form-card .row .line-form:last-child {
-    margin-right: 0; }
+.form-card {
+  position: relative;
+  padding: 20px 20px 40px 20px !important; }
+  .form-card .line-form {
+    width: 300px; }
+  .form-card .row .line-form {
+    margin-right: 40px; }
+    .form-card .row .line-form:last-child {
+      margin-right: 0; }
+  .form-card button, .form-card .button-action, .form-card .button-classic, .form-card .button-special {
+    position: absolute;
+    bottom: 40px;
+    right: 40px; }
+
+.card-checkout {
+  border-top: 1px solid #9EA3AD; }
+  .card-checkout .checkbox-line {
+    margin: 20px 0 20px 0; }
+  .card-checkout .button-special {
+    float: right;
+    max-width: 300px;
+    margin: 0 0 20px 0; }
 
 @media (max-width: 992px) {
   .globalWrapper {
@@ -1355,7 +1471,7 @@ aside {
 
   .contentWrapper {
     margin: 74px auto 40px auto !important; } }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .slideshow-container {
     display: none; }
 

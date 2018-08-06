@@ -45,13 +45,17 @@
     button {
         font-size: 1rem;
     }
+    .button-classic {
+        float: right;
+    }
 }
 
 .form-card {
+    position: relative;
+    padding: 20px 20px 40px 20px !important;
     .line-form {
         width: 300px;
     }
-
     .row {
         .line-form {
             margin-right: 40px;
@@ -60,6 +64,25 @@
             }
         }
     }
+    button {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+    }
+}
+
+.card-checkout {
+    border-top: 1px solid $steel;
+
+    .checkbox-line {
+        margin: 20px 0 20px 0;
+    }
+    .button-special {
+        float: right;
+        max-width: 300px;
+        margin: 0 0 20px 0;;
+    }
+
 }
 
 @media (max-width: $large) {
@@ -71,7 +94,7 @@
     }
 }
 
-@media (max-width: $medium) {
+@media (max-width: $extra-large) {
     .slideshow-container {
         display: none;
     }

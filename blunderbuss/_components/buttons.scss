@@ -53,7 +53,7 @@ button {
     background: linear-gradient($yellow-submarine, $yellow-hover);
     border:none;
     color: $chocolate;
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
     height: 35px;
     width: calc(100% - 40px);
     margin: 0 20px 20px 20px;

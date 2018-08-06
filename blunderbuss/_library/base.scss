@@ -315,6 +315,9 @@ kbd {
   align-items: flex-start
 }
 
+.relative {
+  position: relative; 
+}
 
 
 @media (max-width: $small) {
