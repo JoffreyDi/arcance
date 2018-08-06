@@ -43,160 +43,190 @@
 
       <section class="card vitrine">
         <h2 class="card-title">vitrine</h2>
-        <div class="card-content">
+        <div class="card-content-row-link">
           <div class="row">
             <div class="article-bloc col-L4 col-M6 col-S12">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
-                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc col-L4 col-M6 col-S12">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
-                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc col-L4 col-M6 col-S12">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
-                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc col-L4 col-M6 col-S12">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
-                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc col-L4 col-M6 col-S12">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
-                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc col-L4 col-M6 col-S12">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
-                <div class="article-description mobile">Location d'un caisson lumineux à vos couleurs.</div>
+                <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="row featured-articles">
-        <div class="col-L4 col-M12 card">
+      <section class="row row-card">
+        <div class="col-L4 col-M12 col-S12 card">
           <h2 class="card-title">vitrine</h2>
-          <div class="card-content">
+          <div class="card-content-row-link">
             <div class=" article-bloc row-nowrap">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
                 <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc row-nowrap">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
                 <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc row-nowrap">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
                 <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-L4 col-M12 card">
+        <div class="col-L4 col-M12 col-S12 card">
           <h2 class="card-title">vitrine</h2>
-          <div class="card-content">
+          <div class="card-content-row-link">
             <div class=" article-bloc row-nowrap">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
                 <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc row-nowrap">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
                 <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc row-nowrap">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
                 <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-L4 col-M12 card">
+        <div class="col-L4 col-M12 col-S12 card">
           <h2 class="card-title">vitrine</h2>
-          <div class="card-content">
+          <div class="card-content-row-link">
             <div class="article-bloc row-nowrap">
+              <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
                 <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc row-nowrap">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
                 <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
             <div class="article-bloc row-nowrap">
+            <a href="#">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
                 <div class="article-description">Location d'un caisson lumineux à vos couleurs.</div>
                 <div class="article-price">484,24 €</div>
-                <button>ajouter au panier</button>
+                <button class="button-classic">ajouter au panier</button>
               </div>
+              </a>
             </div>
           </div>
         </div>

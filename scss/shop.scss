@@ -1,13 +1,44 @@
+.card-content-row-link {
+    padding: 0;
+}
+
 .article-bloc {
     display: flex;
-    margin: 0 0 30px 0;
+    padding: 15px 20px;
+    transition: .2s ease-in;
     img {
         height: 84px !important;
         min-width: 84px;
     }
+    &:hover {
+        background: $lunar-white;
+        cursor: pointer;
+        transition: .2s ease-in;
+    }
+    a {
+        display: flex;
+        width: 100%;
+        text-decoration: none;
+        .article-infos {
+            .article-title,
+            .article-description,
+            .article-details {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.vitrine {
+    .col-M6 {
+        margin: 0;
+    }
 }
 
 .article-infos {
+    width: 100%;
     display: block;
     margin: 0 0 0 20px;
     padding: 0 0 0 0;
@@ -26,10 +57,60 @@
         color: $grenadine;
         font-size: 1.8rem;
     }
+    .buy-bloc {
+        .article-price {
+            padding: 0 0 5px 0;
+            ;
+        }
+        flex-direction: column;
+        margin: 0 0 0 8px;
+        min-width: 120px;
+        text-align: right;
+    }
 }
 
-.featured-articles {
+.product-details {
+    .col-L4 {
+        margin: 0;
+        padding: 0 40px 0 0;
+    }
+    img {
+        width: 100%;
+        max-width: auto;
+        height:auto;
+    }
+    .title {
+        font-size: $font-size-big;
+        display: block;
+        font-weight: $weight-light;
+    }
+    .description {
+        padding: 20px 0;
+        display: block;
+    }
+    .price {
+        color: $grenadine;
+        font-size: 3.0rem;
+        margin: 0 0 20px 0;
+        display: block;
+        font-weight: $weight-semibold;
+    }
+    button {
+        float: right;
+    }
+    .details {
+        margin: 40px 0 0 0;
+        padding: 20px 0 0 0;
+        border-top: $pearl-grey solid 1px;
+    }
+}
+
+.row-card {
     flex-wrap: nowrap;
+}
+
+.reverse-mobile {
+    flex-direction: row;
 }
 
 @media (max-width: $extra-large) {
@@ -48,7 +129,35 @@
 }
 
 @media (max-width: $large) {
-    .featured-articles {
+    .row-card {
         flex-wrap: wrap;
     }
+    .reverse-mobile {
+        flex-direction: column-reverse;
+    }
+    .article-infos.spaceBetween {
+        justify-content: initial;
+        display: block !important;
+    }
+    .buy-bloc {
+        .article-price {
+            padding: 0 0 5px 0;
+        }
+        flex-direction: column;
+        margin: 5px 0 0 0 !important;
+        min-width: 120px;
+        text-align: left !important;
+    }
 }
+
+
+
+@media (max-width: $small) {
+.product-details {
+    .col-L4 {
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+}
+}
+

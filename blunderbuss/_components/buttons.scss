@@ -1,8 +1,5 @@
 button {
-  background: linear-gradient($white, $lunar-white);
     -webkit-appearance: none;
-    border: 1px solid $pearl-grey;
-    color: $steel;
     font-size: 1.2rem;
     font-weight: $weight-semibold;
     transition: .3s ease-in;
@@ -11,6 +8,33 @@ button {
     padding: 0 15px 0 15px;
     cursor: pointer;
     text-transform: uppercase;
+    display: bloc
+    
+  }
+  
+  .button-action {
+    @extend button;
+    background: linear-gradient($yellow-submarine, $yellow-hover);
+    border:none;
+    color: $chocolate;
+    &:hover {
+      background: $yellow-hover;
+        transition: .3s ease-in-out;
+      }
+      &:disabled {
+        background: #ccc;
+        color: #ff00cc;
+        cursor: not-allowed;
+      }
+  }
+
+  
+  
+  .button-classic {
+    @extend button;
+    background: linear-gradient($white, $lunar-white);
+    border: 1px solid $pearl-grey;
+    color: $steel;
     &:hover {
       border: 1px solid $steel;
       color: $chocolate;
@@ -23,29 +47,33 @@ button {
         cursor: not-allowed;
       }
   }
-  
-  .button-action {
-    @extend button;
-    width: 130px;
-    height: 40px;
-    margin: 0 0 25px 0;
-    border-radius: 3px;
-  }
-  
-  
-  .button-classic {
-    @extend button;
-    width: 130px;
-    height: 40px;
-    margin: 0 0 25px 0;
-    border-radius: 3px;
-  }
 
   .button-special {
     @extend button;
-    width: 130px;
-    height: 40px;
-    margin: 0 0 25px 0;
-    border-radius: 3px;
+    background: linear-gradient($yellow-submarine, $yellow-hover);
+    border:none;
+    color: $chocolate;
+    font-size: 1.4rem;
+    height: 35px;
+    width: calc(100% - 40px);
+    margin: 0 20px 20px 20px;
+    &:hover {
+      background: $yellow-hover;
+        transition: .3s ease-in-out;
+      }
+      &:disabled {
+        background: #ccc;
+        color: #ff00cc;
+        cursor: not-allowed;
+      }
   }
+
+  .button-special.secondary {
+    @extend .button-special;
+    background: $lunar-white;
+    color: $steel;
+
+  }
+
+
   
