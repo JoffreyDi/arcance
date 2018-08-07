@@ -1,0 +1,22 @@
+.pastille {
+    height: 20px;
+    width: 20px;
+    color: $white;
+    border-radius: 100px;
+    text-align: center;
+    display: block;
+    font-weight: $weight-semibold;
+    font-size: $font-size-small;
+    padding: 1px 0 0 0;
+    margin: 0 0 0 5px;
+}
+
+.pastille-red {
+    @extend .pastille;
+        background: $grenadine;
+}
+
+.pastille-green {
+    @extend .pastille;
+        background: $shamrock;
+}

@@ -7,11 +7,16 @@
         text-transform: uppercase;
         padding: 20px;
         border-bottom: 1px solid $pearl-grey;
+        align-items: center;
+        display: flex;
+    }
+    .card-title-table {
+        @extend .card-title;
+        border-bottom: 0px solid $pearl-grey;
     }
     .card-content {
         padding: 20px 20px 0 20px;
     }
-
 }
 
 .col-L4,
@@ -23,19 +28,19 @@
     }
 }
 
-
 .article-description {
     display: none !important;
 }
 
 @media (max-width:$large) {
-        .article-description {
-            display: block !important;
-        }
-}
-
-@media (max-width:$large) {
-    .col-M12, .col-S12 {
+    .article-description {
+        display: block !important;
+    }
+    .col-M12,
+    .col-S12 {
         margin-right: 0 !important;
+    }
+    .card-title-table {
+        border-bottom: 1px solid $pearl-grey !important;
     }
 }

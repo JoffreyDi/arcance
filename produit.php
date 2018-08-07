@@ -15,8 +15,8 @@
         <div class="card-content product-details">
           <div class="row">
             <div class="col-L4 col-S12">
-            <img src="assets/products/product-placeholder-big.png">
-</div>
+              <img src="assets/products/product-placeholder-big.png">
+            </div>
             <div class="col-L8 col-S12">
               <span class="title">Set memos autocollants eastmateus...</span>
               <span class="description">Cette offre « Do It Yourself » rassemble les solutions les plus innovantes et durables pour vous faciliter
@@ -35,7 +35,7 @@
 
               <span class="price">234,19 €</span>
               <button class="button-action">ajouter au panier</button>
-              
+
             </div>
           </div>
           <div class="details">
@@ -71,31 +71,28 @@
         <h2 class="card-title">filtres</h2>
         <div class="card-content bloc-infos">
 
-<p><strong>1. Fichier d’impréssion</strong><br />
-Merci de déposer votre fichier d’impression au 
-format PDF HD en 300 dpi avec texte et logo 
-vectorisés, 1 cm de fond perdu et traits de coupe. </p>
+          <p>
+            <strong>1. Fichier d’impréssion</strong>
+            <br /> Merci de déposer votre fichier d’impression au format PDF HD en 300 dpi avec texte et logo vectorisés, 1 cm
+            de fond perdu et traits de coupe. </p>
 
-<p>Votre fichier sera vérifié par notre fournisseur qui 
-vous enverra un BAT à valider pour lancer 
-l’impression. </p>
+          <p>Votre fichier sera vérifié par notre fournisseur qui vous enverra un BAT à valider pour lancer l’impression. </p>
 
-<p><strong>3 visuels doivent être fourni :</strong><br />
-- face porte : 640 mm x 1881 mm (H) 
-- bandeau horizontal : 748 mm x 240 mm (H) 
-- bandeau vertical : 145 mm x 2250 mm (H)</p>
+          <p>
+            <strong>3 visuels doivent être fourni :</strong>
+            <br /> - face porte : 640 mm x 1881 mm (H) - bandeau horizontal : 748 mm x 240 mm (H) - bandeau vertical : 145 mm x
+            2250 mm (H)</p>
 
-<p><strong>2. Plan de pose</strong><br />
-Merci de déposer votre plan de stand avec 
-l’emplacement de chaque visuel. La précision de 
-votre plan est nécessaire à la bonne réalisation de 
-la pose.</p>
+          <p>
+            <strong>2. Plan de pose</strong>
+            <br /> Merci de déposer votre plan de stand avec l’emplacement de chaque visuel. La précision de votre plan est nécessaire
+            à la bonne réalisation de la pose.</p>
 
-<p><strong>3. BAT à valider</strong><br />
-Merci de valider ce BAT pour lancer 
-définitivement la production sous réserve que le 
-règlement de votre facture ait bien été effectué 
-intégralement</p>
+          <p>
+            <strong>3. BAT à valider</strong>
+            <br /> Merci de valider ce BAT pour lancer définitivement la production sous réserve que le règlement de votre facture
+            ait bien été effectué intégralement
+          </p>
 
         </div>
       </div>
