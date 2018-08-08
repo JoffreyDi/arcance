@@ -96,11 +96,6 @@
 
 
 
-
-
-
-
-
         <div class="col-M12 card">
           <h2 class="card-title-table">éléments à valider pour la formule nue
             <span class="pastille-red">1</span>
@@ -158,12 +153,6 @@
 
 
 
-
-
-
-
-
-
         <div class="col-M12 card">
           <h2 class="card-title-table">plan décorateur
             <span class="pastille-red">1</span>
@@ -179,34 +168,91 @@
             <div class="row-nowrap">
               <div class="col-L3 col-M12">Plan décorateur</div>
               <div class="col-L6 col-M12">Merci de déposer le plan décorateur</div>
-              <div class="col-L3 col-M12 textAlignRight">
-                <button class="button-action">Déposer le plan</button>
+              <div class="col-L3 col-M12 actions-statut-line">
+                <form action="#">
+                  <div class="input-file-container">  
+                    <input class="input-file" id="my-file" type="file">
+                    <label tabindex="0" for="my-file" class="input-file-trigger">Déposer le plan...</label>
+                  </div>
+                  <p class="file-return"></p>
+                </form>
               </div>
             </div>
+
             <div class="row-nowrap">
-                <div class="col-L3 col-M12">Plan décorateur</div>
-                <div class="col-L6 col-M12">Merci de déposer le plan décorateur</div>
-                <div class="col-L3 col-M12 textAlignRight">
-                <button class="button-action">Déposer le plan</button>
+              <div class="col-L3 col-M12">Plan décorateur</div>
+              <div class="col-L6 col-M12">Merci de déposer le plan décorateur</div>
+              <div class="col-L3 col-M12 actions-statut-line">
+                <i class="material-icons md-dark">close</i> 
+                <i class="material-icons md-dark">remove_red_eye</i> 
+                <span class="status-good">PLAN DÉPOSÉ LE 25/12/2018 </span>
+                
               </div>
             </div>
-            <div class="row-nowrap">
-                <div class="col-L3 col-M12">Plan décorateur</div>
-                <div class="col-L6 col-M12">Merci de déposer le plan décorateur</div>
-                <div class="col-L3 col-M12 textAlignRight">
-                <button class="button-action">Déposer le plan</button>
-              </div>
-            </div>
-            <div class="row-nowrap">
-                <div class="col-L3 col-M12">Plan décorateur</div>
-                <div class="col-L6 col-M12">Merci de déposer le plan décorateur</div>
-                <div class="col-L3 col-M12 textAlignRight">
-                <button class="button-action">Déposer le plan</button>
-              </div>
-            </div>
+
           </div>
         </div>
 
+
+
+
+
+        <div class="col-M12 card">
+          <h2 class="card-title-table">plans</h2>
+
+          <div class="header-table row-nowrap">
+            <div class="col-L9 col-M12">Nom du fichier</div>
+            <div class="col-L3 col-M12 actions-statut-line">Actions</div>
+          </div>
+
+          <div class="card-content table">
+
+            <div class="row-nowrap">
+              <div class="col-L9 col-M12">Plan décorateur</div>
+              <div class="col-L3 col-M12 actions-statut-line">
+                <button class="button-classic">télécharger</button>
+              </div>
+            </div>
+
+            <div class="row-nowrap">
+              <div class="col-L9 col-M12">Plan de votre stand</div>
+              <div class="col-L3 col-M12 actions-statut-line">
+                <button class="button-classic">télécharger</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+        <div class="col-M12 card">
+          <h2 class="card-title-table">documents et fichiers</h2>
+
+          <div class="header-table row-nowrap">
+            <div class="col-L9 col-M12">Nom du fichier</div>
+            <div class="col-L3 col-M12 actions-statut-line">Actions</div>
+          </div>
+
+          <div class="card-content table">
+
+            <div class="row-nowrap">
+              <div class="col-L9 col-M12">Notice stand Pré-équipé</div>
+              <div class="col-L3 col-M12 actions-statut-line">
+                <button class="button-classic">télécharger</button>
+              </div>
+            </div>
+
+            <div class="row-nowrap">
+              <div class="col-L9 col-M12">Nos conseils</div>
+              <div class="col-L3 col-M12 actions-statut-line">
+                <button class="button-classic">télécharger</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
 
 
 

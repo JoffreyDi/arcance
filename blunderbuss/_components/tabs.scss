@@ -57,7 +57,7 @@ ul.tabs li.active {
 		display: none;
 	}
 	.tab_drawer_heading {
-		background-color: #ccc;
+		background-color: transparent;
 		color: #fff;
 		margin: 0;
 		padding: 5px 20px;
@@ -71,7 +71,7 @@ ul.tabs li.active {
 		user-select: none;
 	}
 	.d_active {
-		background-color: #666;
+		background-color: #fff;
 		color: #fff;
 	}
 }

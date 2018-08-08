@@ -46,11 +46,11 @@
     border: 1px solid $steel;
 }
 
-.line-radio:hover input ~ .checkmark {
+.line-radio:hover input~.checkmark {
     border: 1px solid $yellow-submarine;
 }
 
-.line-radio input:checked ~ .checkmark {
+.line-radio input:checked~.checkmark {
     background: $white;
     border: 1px solid $yellow-submarine;
 }
@@ -61,22 +61,18 @@
     display: none;
 }
 
-.line-radio input:checked ~ .checkmark:after {
+.line-radio input:checked~.checkmark:after {
     display: block;
 }
 
 .line-radio .checkmark:after {
- 	top: 1px;
-	left: 1px;
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
-	background: $yellow-submarine;
+    top: 1px;
+    left: 1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: $yellow-submarine;
 }
-
-
-
-
 
 .checkbox-line {
     display: block;
@@ -105,11 +101,11 @@
     border: 1px solid $steel;
 }
 
-.checkbox-line:hover input ~ .checkmarkbox {
+.checkbox-line:hover input~.checkmarkbox {
     border: 1px solid $yellow-submarine;
 }
 
-.checkbox-line input:checked ~ .checkmarkbox {
+.checkbox-line input:checked~.checkmarkbox {
     border: 1px solid $yellow-submarine;
 }
 
@@ -119,7 +115,7 @@
     display: none;
 }
 
-.checkbox-line input:checked ~ .checkmarkbox:after {
+.checkbox-line input:checked~.checkmarkbox:after {
     display: block;
 }
 
@@ -128,23 +124,22 @@
     top: 1px;
     width: 14px;
     height: 14px;
-	background: $yellow-submarine;
+    background: $yellow-submarine;
     border-width: 0 3px 3px 0;
 }
-
-
-
 
 .switch {
     position: relative;
     display: inline-block;
     width: 32px;
     height: 16px;
-  }
-  
-  .switch input {display:none;}
-  
-  .slider {
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -154,9 +149,9 @@
     background-color: $grenadine;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 12px;
@@ -166,27 +161,28 @@
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: $shamrock;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px $shamrock ;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px $shamrock;
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(16px);
     -ms-transform: translateX(16px);
     transform: translateX(16px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
+}

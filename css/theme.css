@@ -172,6 +172,7 @@ button,
 .button-classic,
 .button-special,
 .button-special.secondary,
+.js .input-file-trigger,
 [role="button"],
 input:not([type="range"]),
 label,
@@ -198,10 +199,10 @@ label {
   display: inline-block;
   margin-bottom: .5rem; }
 
-button, .button-action, .button-classic, .button-special, .button-special.secondary {
+button, .button-action, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger {
   border-radius: 0; }
 
-button:focus, .button-action:focus, .button-classic:focus, .button-special:focus {
+button:focus, .button-action:focus, .button-classic:focus, .button-special:focus, .js .input-file-trigger:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color; }
 
@@ -211,6 +212,7 @@ button,
 .button-classic,
 .button-special,
 .button-special.secondary,
+.js .input-file-trigger,
 select,
 optgroup,
 textarea {
@@ -219,21 +221,21 @@ textarea {
   font-size: inherit;
   line-height: inherit; }
 
-button, .button-action, .button-classic, .button-special, .button-special.secondary,
+button, .button-action, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger,
 input {
   overflow: visible; }
 
-button, .button-action, .button-classic, .button-special, .button-special.secondary,
+button, .button-action, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger,
 select {
   text-transform: none; }
 
-button, .button-action, .button-classic, .button-special, .button-special.secondary,
+button, .button-action, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; }
 
-button::-moz-focus-inner, .button-action::-moz-focus-inner, .button-classic::-moz-focus-inner, .button-special::-moz-focus-inner, .button-special.secondary::-moz-focus-inner,
+button::-moz-focus-inner, .button-action::-moz-focus-inner, .button-classic::-moz-focus-inner, .button-special::-moz-focus-inner, .button-special.secondary::-moz-focus-inner, .js .input-file-trigger::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
@@ -780,6 +782,10 @@ kbd {
 .pastille-green {
   background: #31DC94; }
 
+.status-good {
+  color: #31DC94;
+  font-weight: 600; }
+
 .line-form {
   margin: 0 0 20px 0; }
   .line-form select,
@@ -1021,7 +1027,7 @@ input:checked + .slider:before {
     opacity: .4; }
   to {
     opacity: 1; } }
-button, .button-action, .button-classic, .button-special, .button-special.secondary {
+button, .button-action, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger {
   -webkit-appearance: none;
   font-size: 1.2rem;
   font-weight: 600;
@@ -1078,6 +1084,46 @@ button, .button-action, .button-classic, .button-special, .button-special.second
 .button-special.secondary {
   background: #f8f8f8;
   color: #9EA3AD; }
+
+.input-file-container {
+  position: relative; }
+
+.js .input-file-trigger {
+  background: linear-gradient(#FFD100, #FFBA00);
+  border: none;
+  color: #8F6932;
+  padding: 5px 15px; }
+
+.js .input-file {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer; }
+
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: #FFBA00;
+  transition: .3s ease-in-out; }
+
+.file-return {
+  margin: 0; }
+
+.file-return:not(:empty) {
+  margin: 1em 0; }
+
+.js .file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+  display: none; }
+
+.js .file-return:not(:empty):before {
+  content: "Selected file: ";
+  font-style: normal;
+  font-weight: normal; }
 
 .overlay {
   left: -100%;
@@ -1225,7 +1271,7 @@ ul.tabs li.active {
     display: none; }
 
   .tab_drawer_heading {
-    background-color: #ccc;
+    background-color: transparent;
     color: #fff;
     margin: 0;
     padding: 5px 20px;
@@ -1239,11 +1285,30 @@ ul.tabs li.active {
     user-select: none; }
 
   .d_active {
-    background-color: #666;
+    background-color: #fff;
     color: #fff; } }
 .header-table {
   padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #DEE0E4; }
+  border-bottom: 1px solid #DEE0E4;
+  color: #9EA3AD;
+  font-size: 1.2rem; }
+
+.actions-statut-line {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; }
+  .actions-statut-line * {
+    margin: 0 5px; }
+  .actions-statut-line .material-icons {
+    cursor: pointer;
+    transition: .3s ease-in-out; }
+    .actions-statut-line .material-icons:hover {
+      background: #f8f8f8;
+      width: 24px;
+      height: 24px;
+      border-radius: 100px;
+      transition: .3s ease-in-out;
+      color: #181A1E; }
 
 @media (max-width: 992px) {
   .header-table {
@@ -1599,7 +1664,7 @@ aside {
   border-top: 1px solid #DEE0E4; }
   .bloc-details .border:first-child {
     border-top: 0px; }
-.bloc-details button, .bloc-details .button-action, .bloc-details .button-classic, .bloc-details .button-special {
+.bloc-details button, .bloc-details .button-action, .bloc-details .button-classic, .bloc-details .button-special, .bloc-details .js .input-file-trigger, .js .bloc-details .input-file-trigger {
   font-size: 1rem; }
 .bloc-details .button-classic {
   float: right; }
@@ -1613,7 +1678,7 @@ aside {
     margin-right: 40px; }
     .form-card .row .line-form:last-child {
       margin-right: 0; }
-  .form-card button, .form-card .button-action, .form-card .button-classic, .form-card .button-special {
+  .form-card button, .form-card .button-action, .form-card .button-classic, .form-card .button-special, .form-card .js .input-file-trigger, .js .form-card .input-file-trigger {
     position: absolute;
     bottom: 40px;
     right: 40px; }
@@ -1643,7 +1708,7 @@ aside {
   .slideshow-container {
     display: none; }
 
-  .bloc-details button, .bloc-details .button-action, .bloc-details .button-classic, .bloc-details .button-special {
+  .bloc-details button, .bloc-details .button-action, .bloc-details .button-classic, .bloc-details .button-special, .bloc-details .js .input-file-trigger, .js .bloc-details .input-file-trigger {
     font-size: 1rem !important; } }
 .slideshow-container {
   /* Next & previous buttons */ }
@@ -1730,7 +1795,7 @@ aside {
   margin: 0 0 20px 0;
   display: block;
   font-weight: 600; }
-.product-details button, .product-details .button-action, .product-details .button-classic, .product-details .button-special {
+.product-details button, .product-details .button-action, .product-details .button-classic, .product-details .button-special, .product-details .js .input-file-trigger, .js .product-details .input-file-trigger {
   float: right; }
 .product-details .details {
   margin: 40px 0 0 0;
@@ -1750,7 +1815,7 @@ aside {
 
   .article-infos {
     margin: 0 0 0 10px; }
-    .article-infos button, .article-infos .button-action, .article-infos .button-classic, .article-infos .button-special {
+    .article-infos button, .article-infos .button-action, .article-infos .button-classic, .article-infos .button-special, .article-infos .js .input-file-trigger, .js .article-infos .input-file-trigger {
       display: none; } }
 @media (max-width: 992px) {
   .row-card {
