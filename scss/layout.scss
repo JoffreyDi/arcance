@@ -29,8 +29,37 @@
         &:last-child {
             border-bottom: 0px solid $pearl-grey;
         }
+        .col-L2,
+        .col-L1 {
+            padding: 0 10px 0 0;
+        }
+    }
+    .order {
+        display: flex;
+        img {
+            height: 50px;
+            width: 50px;
+            min-width: 60px;
+            max-width: 60px;
+            margin: 0 10px 0 0;
+        }
+        .quantity {
+            color: $steel;
+            font-size:$font-size-small;
+        }
+        .article-name {
+            padding: 0 20px 0 0;
+        }
     }
 }
+
+.messages {
+    @extend .table;
+        .new-message {
+            font-weight:$weight-semibold;
+        }
+    }
+
 
 .bloc-infos {
     font-size: $font-size-small;
@@ -103,7 +132,6 @@
     .contentWrapper {
         margin: 74px auto 40px auto !important;
     }
-
     .table {
         .row-nowrap {
             flex-wrap: wrap;
@@ -112,7 +140,7 @@
                 text-align: left;
             }
             div {
-                padding: 5px 0;
+                padding-top: 8px !important;
             }
         }
     }

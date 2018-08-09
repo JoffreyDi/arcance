@@ -53,7 +53,7 @@ ul.tabs li.active {
 
 .tab_drawer_heading { display: none; }
 
-@media screen and (max-width: $small) {
+@media screen and (max-width: $medium) {
 	.tabs {
 		display: none;
 	}

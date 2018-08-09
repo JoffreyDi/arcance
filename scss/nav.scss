@@ -171,12 +171,15 @@ aside {
         margin: 0 20px 0 0;
     }
     .main-link {
+        a {
         height: 45px;
+        color: $steel;
         display: flex;
         align-items: center;
         padding: 0 20px 0 20px;
         border-left: 0px solid;
         transition: all 0.1s ease-out;
+        text-decoration: none;
         &:hover {
             cursor: pointer;
             color: $white;
@@ -187,6 +190,7 @@ aside {
                 color: $yellow-submarine;
             }
         }
+    }
     }
     .aside-bloc-infos {
         position: fixed;

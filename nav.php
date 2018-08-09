@@ -208,13 +208,13 @@
   <nav>
     <ul class="nav-links">
       <li class="main-link">
-        <i class="material-icons md-dark">face</i>Boutique</li>
+        <a href="index.php"><i class="material-icons md-dark">shopping_basket</i>Boutique</a></li>
       <li class="main-link">
-        <i class="material-icons md-dark">face</i>Mon stand</li>
+      <a href="mon-stand.php"><i class="material-icons md-dark">account_circle</i>Mon stand</a></li>
       <li class="main-link">
-        <i class="material-icons md-dark">face</i>Mes commandes</li>
+      <a href="mes-commandes.php"><i class="material-icons md-dark">receipt</i>Mes commandes</a></li>
       <li class="main-link">
-        <i class="material-icons md-dark">face</i>Mes messages</li>
+      <a href="mes-messages.php"><i class="material-icons md-dark">mail_outline</i>Mes messages</a></li>
     </ul>
 
     <div class="content-link-mobile">

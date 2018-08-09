@@ -3,9 +3,8 @@ button {
     font-size: 1.2rem;
     font-weight: $weight-semibold;
     transition: .3s ease-in;
-    height: 28px;
     width: auto;
-    padding: 0 15px 0 15px;
+    padding: 5px 15px 5px 15px;
     cursor: pointer;
     text-transform: uppercase;
     display: bloc
@@ -71,7 +70,16 @@ button {
     color: $steel;
 }
 
-
+.button-new-message {
+    @extend .button-action;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    &:hover {
+        background: $yellow-hover;
+        transition: .3s ease-in-out;
+    }
+}
 
 
 
@@ -113,9 +121,7 @@ button {
 }
 
 .js .file-return {
-    font-style: italic;
-    font-size: .9em;
-    font-weight: bold;
+    font-size: 1.2rem;
     display: none;
 }
 

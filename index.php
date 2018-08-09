@@ -231,11 +231,10 @@
           </div>
         </div>
       </section>
-
-
       <script src="js/jquery.js"></script>
-      <script src="js/script.js"></script>
-
+      <script src="js/nav.js"></script>
+      <script src="js/slideshow.js"></script>
+      <?php include 'footer.php'; ?>
 </body>
 
 </html>

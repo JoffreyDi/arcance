@@ -19,7 +19,7 @@
       <li rel="tab3">vos documents
         <span class="pastille-green">1</span>
       </li>
-      <li rel="tab3">vos elements techniques
+      <li rel="tab4">vos elements techniques
         <span class="pastille-green">1</span>
       </li>
     </ul>
@@ -46,9 +46,10 @@
       <!-- #tab3 -->
 
      <h3 class="tab_drawer_heading" rel="tab4">vos éléments techniques</h3>
-      <section id="tab3" class="tab_content">
-      <?php include 'mon-stand--tab3.php'; ?>
+      <section id="tab4" class="tab_content">
+      <?php include 'mon-stand--tab4.php'; ?>
       </section>
+
 
 
     </div>
@@ -165,11 +166,12 @@
     </div>
 
   </div>
-
-
   <script src="js/jquery.js"></script>
-  <script src="js/script.js"></script>
-
+  <script src="js/nav.js"></script>
+  <script src="js/upload.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/modals.js"></script>
+  <?php include 'footer.php'; ?>
   </body>
 
   </html>

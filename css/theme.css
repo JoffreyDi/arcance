@@ -169,6 +169,7 @@ a,
 area,
 button,
 .button-action,
+.button-new-message,
 .button-classic,
 .button-special,
 .button-special.secondary,
@@ -199,16 +200,17 @@ label {
   display: inline-block;
   margin-bottom: .5rem; }
 
-button, .button-action, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger {
+button, .button-action, .button-new-message, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger {
   border-radius: 0; }
 
-button:focus, .button-action:focus, .button-classic:focus, .button-special:focus, .js .input-file-trigger:focus {
+button:focus, .button-action:focus, .button-new-message:focus, .button-classic:focus, .button-special:focus, .js .input-file-trigger:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color; }
 
 input,
 button,
 .button-action,
+.button-new-message,
 .button-classic,
 .button-special,
 .button-special.secondary,
@@ -221,21 +223,21 @@ textarea {
   font-size: inherit;
   line-height: inherit; }
 
-button, .button-action, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger,
+button, .button-action, .button-new-message, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger,
 input {
   overflow: visible; }
 
-button, .button-action, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger,
+button, .button-action, .button-new-message, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger,
 select {
   text-transform: none; }
 
-button, .button-action, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger,
+button, .button-action, .button-new-message, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; }
 
-button::-moz-focus-inner, .button-action::-moz-focus-inner, .button-classic::-moz-focus-inner, .button-special::-moz-focus-inner, .button-special.secondary::-moz-focus-inner, .js .input-file-trigger::-moz-focus-inner,
+button::-moz-focus-inner, .button-action::-moz-focus-inner, .button-new-message::-moz-focus-inner, .button-classic::-moz-focus-inner, .button-special::-moz-focus-inner, .button-special.secondary::-moz-focus-inner, .js .input-file-trigger::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
@@ -624,10 +626,10 @@ q {
 
 q,
 .q {
-  quotes: "ÔÇ£" "ÔÇØ" "ÔÇÿ" "ÔÇÖ"; }
+  quotes: "“" "”" "‘" "’"; }
   q:lang(fr),
   .q:lang(fr) {
-    quotes: "┬½\00a0" "\00a0┬╗" "ÔÇ£" "ÔÇØ"; }
+    quotes: "«\00a0" "\00a0»" "“" "”"; }
 
 hr {
   display: block;
@@ -785,6 +787,16 @@ kbd {
 .status-good {
   color: #31DC94;
   font-weight: 600; }
+
+.status-pending {
+  color: #9EA3AD;
+  font-weight: 600;
+  text-align: right; }
+
+.status-wrong {
+  color: #FF5340;
+  font-weight: 600;
+  text-align: right; }
 
 .line-form {
   margin: 0 0 20px 0; }
@@ -1029,26 +1041,25 @@ input:checked + .slider:before {
     opacity: .4; }
   to {
     opacity: 1; } }
-button, .button-action, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger {
+button, .button-action, .button-new-message, .button-classic, .button-special, .button-special.secondary, .js .input-file-trigger {
   -webkit-appearance: none;
   font-size: 1.2rem;
   font-weight: 600;
   transition: .3s ease-in;
-  height: 28px;
   width: auto;
-  padding: 0 15px 0 15px;
+  padding: 5px 15px 5px 15px;
   cursor: pointer;
   text-transform: uppercase;
   display: bloc; }
 
-.button-action {
+.button-action, .button-new-message {
   background: linear-gradient(#FFD100, #FFBA00);
   border: none;
   color: #8F6932; }
-  .button-action:hover {
+  .button-action:hover, .button-new-message:hover {
     background: #FFBA00;
     transition: .3s ease-in-out; }
-  .button-action:disabled {
+  .button-action:disabled, .button-new-message:disabled {
     background: #ccc;
     color: #ff00cc;
     cursor: not-allowed; }
@@ -1087,6 +1098,14 @@ button, .button-action, .button-classic, .button-special, .button-special.second
   background: #f8f8f8;
   color: #9EA3AD; }
 
+.button-new-message {
+  position: absolute;
+  top: 20px;
+  right: 20px; }
+  .button-new-message:hover {
+    background: #FFBA00;
+    transition: .3s ease-in-out; }
+
 .input-file-container {
   position: relative; }
 
@@ -1117,9 +1136,7 @@ button, .button-action, .button-classic, .button-special, .button-special.second
   margin: 1em 0; }
 
 .js .file-return {
-  font-style: italic;
-  font-size: .9em;
-  font-weight: bold;
+  font-size: 1.2rem;
   display: none; }
 
 .js .file-return:not(:empty):before {
@@ -1160,7 +1177,7 @@ button, .button-action, .button-classic, .button-special, .button-special.second
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 10% auto;
+  margin: 5% auto;
   /* 15% from the top and centered */
   padding: 40px;
   border: 1px solid #888;
@@ -1319,7 +1336,7 @@ ul.tabs li.active {
 .tab_drawer_heading {
   display: none; }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .tabs {
     display: none; }
 
@@ -1341,32 +1358,6 @@ ul.tabs li.active {
   .d_active {
     background-color: #FFD100;
     color: #8F6932; } }
-.header-table {
-  padding: 0 20px 10px 20px;
-  border-bottom: 1px solid #DEE0E4;
-  color: #9EA3AD;
-  font-size: 1.2rem; }
-
-.actions-statut-line {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center; }
-  .actions-statut-line * {
-    margin: 0 5px; }
-  .actions-statut-line .material-icons {
-    cursor: pointer;
-    transition: .3s ease-in-out; }
-    .actions-statut-line .material-icons:hover {
-      background: #f8f8f8;
-      width: 24px;
-      height: 24px;
-      border-radius: 100px;
-      transition: .3s ease-in-out;
-      color: #181A1E; }
-
-@media (max-width: 992px) {
-  .header-table {
-    display: none; } }
 h1 {
   margin-bottom: 5px; }
 
@@ -1511,20 +1502,22 @@ aside {
     padding: 0; }
   aside .material-icons {
     margin: 0 20px 0 0; }
-  aside .main-link {
+  aside .main-link a {
     height: 45px;
+    color: #9EA3AD;
     display: flex;
     align-items: center;
     padding: 0 20px 0 20px;
     border-left: 0px solid;
-    transition: all 0.1s ease-out; }
-    aside .main-link:hover {
+    transition: all 0.1s ease-out;
+    text-decoration: none; }
+    aside .main-link a:hover {
       cursor: pointer;
       color: #fff;
       border-left: 3px solid #FFD100;
       background-color: #313131;
       transition: all 0.3s ease-out; }
-      aside .main-link:hover .material-icons {
+      aside .main-link a:hover .material-icons {
         color: #FFD100; }
   aside .aside-bloc-infos {
     position: fixed;
@@ -1694,14 +1687,34 @@ aside {
     .title-page a:hover {
       text-decoration: underline; }
 
-.table {
+.table, .messages {
   padding: 0 !important; }
-  .table .row-nowrap {
+  .table .row-nowrap, .messages .row-nowrap {
     padding: 15px 20px;
     align-items: center;
     border-bottom: 1px solid #DEE0E4; }
-    .table .row-nowrap:last-child {
+    .table .row-nowrap:last-child, .messages .row-nowrap:last-child {
       border-bottom: 0px solid #DEE0E4; }
+    .table .row-nowrap .col-L2, .messages .row-nowrap .col-L2,
+    .table .row-nowrap .col-L1,
+    .messages .row-nowrap .col-L1 {
+      padding: 0 10px 0 0; }
+  .table .order, .messages .order {
+    display: flex; }
+    .table .order img, .messages .order img {
+      height: 50px;
+      width: 50px;
+      min-width: 60px;
+      max-width: 60px;
+      margin: 0 10px 0 0; }
+    .table .order .quantity, .messages .order .quantity {
+      color: #9EA3AD;
+      font-size: 1.2rem; }
+    .table .order .article-name, .messages .order .article-name {
+      padding: 0 20px 0 0; }
+
+.messages .new-message {
+  font-weight: 600; }
 
 .bloc-infos {
   font-size: 1.2rem; }
@@ -1718,7 +1731,7 @@ aside {
   border-top: 1px solid #DEE0E4; }
   .bloc-details .border:first-child {
     border-top: 0px; }
-.bloc-details button, .bloc-details .button-action, .bloc-details .button-classic, .bloc-details .button-special, .bloc-details .js .input-file-trigger, .js .bloc-details .input-file-trigger {
+.bloc-details button, .bloc-details .button-action, .bloc-details .button-new-message, .bloc-details .button-classic, .bloc-details .button-special, .bloc-details .js .input-file-trigger, .js .bloc-details .input-file-trigger {
   font-size: 1rem; }
 .bloc-details .button-classic {
   float: right; }
@@ -1732,7 +1745,7 @@ aside {
     margin-right: 40px; }
     .form-card .row .line-form:last-child {
       margin-right: 0; }
-  .form-card button, .form-card .button-action, .form-card .button-classic, .form-card .button-special, .form-card .js .input-file-trigger, .js .form-card .input-file-trigger {
+  .form-card button, .form-card .button-action, .form-card .button-new-message, .form-card .button-classic, .form-card .button-special, .form-card .js .input-file-trigger, .js .form-card .input-file-trigger {
     position: absolute;
     bottom: 40px;
     right: 40px; }
@@ -1753,18 +1766,18 @@ aside {
   .contentWrapper {
     margin: 74px auto 40px auto !important; }
 
-  .table .row-nowrap {
+  .table .row-nowrap, .messages .row-nowrap {
     flex-wrap: wrap;
     padding: 15px 20px; }
-    .table .row-nowrap .textAlignRight {
+    .table .row-nowrap .textAlignRight, .messages .row-nowrap .textAlignRight {
       text-align: left; }
-    .table .row-nowrap div {
-      padding: 5px 0; } }
+    .table .row-nowrap div, .messages .row-nowrap div {
+      padding-top: 8px !important; } }
 @media (max-width: 1280px) {
   .slideshow-container {
     display: none; }
 
-  .bloc-details button, .bloc-details .button-action, .bloc-details .button-classic, .bloc-details .button-special, .bloc-details .js .input-file-trigger, .js .bloc-details .input-file-trigger {
+  .bloc-details button, .bloc-details .button-action, .bloc-details .button-new-message, .bloc-details .button-classic, .bloc-details .button-special, .bloc-details .js .input-file-trigger, .js .bloc-details .input-file-trigger {
     font-size: 1rem !important; } }
 .slideshow-container {
   /* Next & previous buttons */ }
@@ -1781,6 +1794,41 @@ aside {
       font-size: 3.2rem;
       color: #8F6932; }
 
+.header-table {
+  padding: 0 20px 10px 20px;
+  border-bottom: 1px solid #DEE0E4;
+  color: #9EA3AD;
+  font-size: 1.2rem; }
+
+.actions-statut-line {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 0 0 0 20px;
+  text-transform: uppercase; }
+  .actions-statut-line .material-icons {
+    margin: 0 0 0 10px; }
+  .actions-statut-line .material-icons {
+    cursor: pointer;
+    transition: .3s ease-in-out; }
+    .actions-statut-line .material-icons:hover {
+      background: #f8f8f8;
+      width: 24px;
+      height: 24px;
+      border-radius: 100px;
+      transition: .3s ease-in-out;
+      color: #181A1E; }
+  .actions-statut-line label {
+    text-transform: initial; }
+  .actions-statut-line input {
+    height: 28px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 0px; }
+
+@media (max-width: 992px) {
+  .header-table {
+    display: none; } }
 .card-content-row-link {
   padding: 0; }
 
@@ -1851,7 +1899,7 @@ aside {
   margin: 0 0 20px 0;
   display: block;
   font-weight: 600; }
-.product-details button, .product-details .button-action, .product-details .button-classic, .product-details .button-special, .product-details .js .input-file-trigger, .js .product-details .input-file-trigger {
+.product-details button, .product-details .button-action, .product-details .button-new-message, .product-details .button-classic, .product-details .button-special, .product-details .js .input-file-trigger, .js .product-details .input-file-trigger {
   float: right; }
 .product-details .details {
   margin: 40px 0 0 0;
@@ -1871,7 +1919,7 @@ aside {
 
   .article-infos {
     margin: 0 0 0 10px; }
-    .article-infos button, .article-infos .button-action, .article-infos .button-classic, .article-infos .button-special, .article-infos .js .input-file-trigger, .js .article-infos .input-file-trigger {
+    .article-infos button, .article-infos .button-action, .article-infos .button-new-message, .article-infos .button-classic, .article-infos .button-special, .article-infos .js .input-file-trigger, .js .article-infos .input-file-trigger {
       display: none; } }
 @media (max-width: 992px) {
   .row-card {

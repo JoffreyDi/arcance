@@ -13,15 +13,27 @@
 
 .pastille-red {
     @extend .pastille;
-        background: $grenadine;
+    background: $grenadine;
 }
 
 .pastille-green {
     @extend .pastille;
-        background: $shamrock;
+    background: $shamrock;
 }
 
 .status-good {
     color: $shamrock;
     font-weight: $weight-semibold;
+}
+
+.status-pending {
+    color: $steel;
+    font-weight: $weight-semibold;
+    text-align: right;
+}
+
+.status-wrong {
+    color: $grenadine;
+    font-weight: $weight-semibold;
+    text-align: right;
 }
