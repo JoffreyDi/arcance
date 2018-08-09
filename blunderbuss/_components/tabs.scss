@@ -19,7 +19,8 @@ ul.tabs li {
 	background-color:transparent;
 	color: $steel;
 	overflow: hidden;
-    position: relative;
+	position: relative;
+	text-transform: uppercase;
     .pastille {
         margin: 0 0 0 5px;
     }
@@ -52,15 +53,15 @@ ul.tabs li.active {
 
 .tab_drawer_heading { display: none; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $small) {
 	.tabs {
 		display: none;
 	}
 	.tab_drawer_heading {
-		background-color: transparent;
-		color: #fff;
-		margin: 0;
-		padding: 5px 20px;
+		background-color: $black-star;
+		color: $white;
+		margin: 0 0 10px 0;
+		padding: 15px 20px;
 		display: block;
 		cursor: pointer;
 		-webkit-touch-callout: none;
@@ -69,9 +70,11 @@ ul.tabs li.active {
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
+
+		text-transform: uppercase;
 	}
 	.d_active {
-		background-color: #fff;
-		color: #fff;
+		background-color: $yellow-submarine;
+		color: $chocolate;
 	}
 }

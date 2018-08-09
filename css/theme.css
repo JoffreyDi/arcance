@@ -624,10 +624,10 @@ q {
 
 q,
 .q {
-  quotes: "“" "”" "‘" "’"; }
+  quotes: "ÔÇ£" "ÔÇØ" "ÔÇÿ" "ÔÇÖ"; }
   q:lang(fr),
   .q:lang(fr) {
-    quotes: "«\00a0" "\00a0»" "“" "”"; }
+    quotes: "┬½\00a0" "\00a0┬╗" "ÔÇ£" "ÔÇØ"; }
 
 hr {
   display: block;
@@ -792,11 +792,13 @@ kbd {
   .line-form input {
     -webkit-appearance: none;
     width: 100%;
+    max-width: 320px;
     padding: 10px;
     border: 1px solid #DEE0E4;
     border-radius: 4px; }
   .line-form label {
     margin: 0 0 5px 0;
+    display: block;
     font-weight: 600; }
 
 .submit-line {
@@ -1132,9 +1134,59 @@ button, .button-action, .button-classic, .button-special, .button-special.second
   width: 100%;
   top: 0;
   bottom: 0;
-  z-index: 11;
+  z-index: 20;
   transition: 200ms; }
 
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 21;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  /* 15% from the top and centered */
+  padding: 40px;
+  border: 1px solid #888;
+  width: 70%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+@media (max-width: 576px) {
+  .modal-content {
+    margin: 0% auto;
+    /* 15% from the top and centered */
+    border: 0px;
+    width: 100%;
+    /* Could be more or less, depending on screen size */ } }
 /* Dropdown Content (Hidden by Default) */
 .content-link-mobile {
   display: none; }
@@ -1239,7 +1291,8 @@ ul.tabs li {
   background-color: transparent;
   color: #9EA3AD;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  text-transform: uppercase; }
   ul.tabs li .pastille, ul.tabs li .pastille-red, ul.tabs li .pastille-green {
     margin: 0 0 0 5px; }
 
@@ -1266,15 +1319,15 @@ ul.tabs li.active {
 .tab_drawer_heading {
   display: none; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .tabs {
     display: none; }
 
   .tab_drawer_heading {
-    background-color: transparent;
+    background-color: #181A1E;
     color: #fff;
-    margin: 0;
-    padding: 5px 20px;
+    margin: 0 0 10px 0;
+    padding: 15px 20px;
     display: block;
     cursor: pointer;
     -webkit-touch-callout: none;
@@ -1282,11 +1335,12 @@ ul.tabs li.active {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; }
+    user-select: none;
+    text-transform: uppercase; }
 
   .d_active {
-    background-color: #fff;
-    color: #fff; } }
+    background-color: #FFD100;
+    color: #8F6932; } }
 .header-table {
   padding: 0 20px 10px 20px;
   border-bottom: 1px solid #DEE0E4;
@@ -1703,7 +1757,9 @@ aside {
     flex-wrap: wrap;
     padding: 15px 20px; }
     .table .row-nowrap .textAlignRight {
-      text-align: left; } }
+      text-align: left; }
+    .table .row-nowrap div {
+      padding: 5px 0; } }
 @media (max-width: 1280px) {
   .slideshow-container {
     display: none; }

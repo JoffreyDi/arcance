@@ -4,12 +4,14 @@
     input {
         -webkit-appearance: none;
         width: 100%;
+        max-width: 320px;
         padding: 10px;
         border: 1px solid $pearl-grey;
         border-radius: 4px;
     }
     label {
         margin: 0 0 5px 0;
+        display: block;
         font-weight: $weight-semibold;
     }
 }
