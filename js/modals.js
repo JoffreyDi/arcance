@@ -1,6 +1,6 @@
 
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById('modal');
 
 // Get the button that opens the modal
 var btn = document.getElementById("open-modal");
@@ -24,3 +24,15 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+
+  $( ".display-textarea" ).click(function() {
+    $( ".textarea-bloc" ).show( "slow", function() {
+    });
+  });
+
+  $( ".hide-textarea" ).click(function() {
+    $( ".textarea-bloc" ).hide( "slow", function() {
+    });
+  });

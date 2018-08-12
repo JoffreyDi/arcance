@@ -626,10 +626,10 @@ q {
 
 q,
 .q {
-  quotes: "“" "”" "‘" "’"; }
+  quotes: "ÔÇ£" "ÔÇØ" "ÔÇÿ" "ÔÇÖ"; }
   q:lang(fr),
   .q:lang(fr) {
-    quotes: "«\00a0" "\00a0»" "“" "”"; }
+    quotes: "┬½\00a0" "\00a0┬╗" "ÔÇ£" "ÔÇØ"; }
 
 hr {
   display: block;
@@ -815,6 +815,20 @@ kbd {
 
 .submit-line {
   padding: 20px; }
+
+.textarea-bloc {
+  position: relative; }
+  .textarea-bloc textarea {
+    -webkit-appearance: none;
+    width: 100%;
+    min-height: 200px;
+    padding: 10px 10px 40px 10px;
+    border: 1px solid #DEE0E4;
+    border-radius: 4px; }
+  .textarea-bloc button, .textarea-bloc .button-action, .textarea-bloc .button-new-message, .textarea-bloc .button-classic, .textarea-bloc .button-special, .textarea-bloc .js .input-file-trigger, .js .textarea-bloc .input-file-trigger {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
 
 .line-radio {
   display: block;
@@ -1175,7 +1189,7 @@ button, .button-action, .button-new-message, .button-classic, .button-special, .
   /* Black w/ opacity */ }
 
 /* Modal Content/Box */
-.modal-content {
+.modal-content, .modal-content-mini {
   background-color: #fefefe;
   margin: 5% auto;
   /* 15% from the top and centered */
@@ -1183,6 +1197,9 @@ button, .button-action, .button-new-message, .button-classic, .button-special, .
   border: 1px solid #888;
   width: 70%;
   /* Could be more or less, depending on screen size */ }
+
+.modal-content-mini {
+  max-width: 800px; }
 
 /* The Close Button */
 .close {
@@ -1197,8 +1214,15 @@ button, .button-action, .button-new-message, .button-classic, .button-special, .
   text-decoration: none;
   cursor: pointer; }
 
+.modal-title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px 0; }
+  .modal-title h1 {
+    margin: 0 20px 0 0; }
+
 @media (max-width: 576px) {
-  .modal-content {
+  .modal-content, .modal-content-mini {
     margin: 0% auto;
     /* 15% from the top and centered */
     border: 0px;
@@ -1758,6 +1782,9 @@ aside {
     float: right;
     max-width: 300px;
     margin: 0 0 20px 0; }
+
+.textarea-bloc {
+  display: none; }
 
 @media (max-width: 992px) {
   .globalWrapper {

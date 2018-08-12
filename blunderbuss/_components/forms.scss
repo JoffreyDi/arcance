@@ -20,6 +20,23 @@
     padding: 20px;
 }
 
+.textarea-bloc {
+    position: relative;
+    textarea {
+        -webkit-appearance: none;
+        width: 100%;
+        min-height: 200px;
+        padding: 10px 10px 40px 10px;
+        border: 1px solid $pearl-grey;
+        border-radius: 4px;
+    }
+    button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
 .line-radio {
     display: block;
     position: relative;

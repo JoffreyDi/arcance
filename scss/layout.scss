@@ -125,6 +125,11 @@
     }
 }
 
+.textarea-bloc {
+    display: none;
+}
+
+
 @media (max-width: $large) {
     .globalWrapper {
         margin: 100px 20px 0 20px;

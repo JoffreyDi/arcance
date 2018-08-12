@@ -1,13 +1,11 @@
 
 $( ".close-panel" ).click(function() {
     $( ".user-panel" ).slideUp( "slow", function() {
-      // Animation complete.
     });
   });
   
   $( ".myaccount-select" ).click(function() {
     $( ".user-panel" ).slideDown( "slow", function() {
-      // Animation complete.
     });
   });
   
