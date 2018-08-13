@@ -14,45 +14,46 @@
         <span class="pastille-red">1</span>
       </li>
       <li rel="tab2">votre enseigne
-        <span class="pastille-green">1</span>
+      <span class="pastille-green"><i class="material-icons md-dark">check</i></span>
       </li>
       <li rel="tab3">vos documents
         <span class="pastille-green">1</span>
       </li>
       <li rel="tab4">vos elements techniques
-        <span class="pastille-green">1</span>
+      <span class="pastille-red">4</span>
       </li>
     </ul>
     <div class="tab_container">
 
       <h3 class="d_active tab_drawer_heading" rel="tab1">votre formule</h3>
       <section id="tab1" class="tab_content">
-        <?php include 'mon-stand--tab1.php'; ?>
+        <?php include 'includes/mon-stand--tab1.php'; ?>
       </section>
       <!-- #tab1 -->
 
 
       <h3 class="tab_drawer_heading" rel="tab2">votre enseigne</h3>
       <section id="tab2" class="tab_content">
-      <?php include 'mon-stand--tab2.php'; ?>
+      <?php include 'includes/mon-stand--tab2.php'; ?>
       </section>
       <!-- #tab2 -->
 
 
       <h3 class="tab_drawer_heading" rel="tab3">vos documents</h3>
       <section id="tab3" class="tab_content">
-      <?php include 'mon-stand--tab3.php'; ?>
+      <?php include 'includes/mon-stand--tab3.php'; ?>
       </section>
       <!-- #tab3 -->
 
      <h3 class="tab_drawer_heading" rel="tab4">vos éléments techniques</h3>
       <section id="tab4" class="tab_content">
-      <?php include 'mon-stand--tab4.php'; ?>
+      <?php include 'includes/mon-stand--tab4.php'; ?>
       </section>
 
 
-
+ 
     </div>
+    <?php include 'footer.php'; ?>
     <!-- .tab_container -->
   </div>
 
@@ -171,7 +172,7 @@
   <script src="js/upload.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/modals.js"></script>
-  <?php include 'footer.php'; ?>
+
   </body>
 
   </html>

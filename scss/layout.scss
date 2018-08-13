@@ -1,3 +1,13 @@
+.globalWrapper-login {
+    margin: 100px 40px 0 40px;
+}
+
+.contentWrapper-login {
+    max-width: 1000px;
+    margin: 40px auto 40px auto !important;
+    width: 100%;
+}
+
 .globalWrapper {
     margin: 100px 40px 0 280px;
     transition: margin-left .5s;
@@ -45,7 +55,7 @@
         }
         .quantity {
             color: $steel;
-            font-size:$font-size-small;
+            font-size: $font-size-small;
         }
         .article-name {
             padding: 0 20px 0 0;
@@ -55,11 +65,10 @@
 
 .messages {
     @extend .table;
-        .new-message {
-            font-weight:$weight-semibold;
-        }
+    .new-message {
+        font-weight: $weight-semibold;
     }
-
+}
 
 .bloc-infos {
     font-size: $font-size-small;
@@ -93,7 +102,7 @@
 
 .form-card {
     position: relative;
-    padding: 20px 20px 40px 20px !important;
+    padding: 20px 20px 80px 20px !important;
     .line-form {
         width: 300px;
     }
@@ -129,6 +138,60 @@
     display: none;
 }
 
+.login-container {
+    background: $black-star;
+    height: 100%;
+    padding: 50px;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .row {
+        input {
+            border: 0;
+            border-radius: 0;
+        }
+        max-width: 300px;
+        flex-direction: column;
+        .button-special {
+            width: 100% !important;
+            margin: 0;
+            height: 41px;
+        }
+        img {
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
+    }
+    .row-stand {
+        @extend .row;
+        padding: 50px;
+        background: rgba(255, 255, 255, 0);
+        transition: background-color 0.3s;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s;
+            border-radius: 10px;
+        }
+    }
+}
+
+footer {
+    color: $steel;
+    a {
+        color: $steel;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
 
 @media (max-width: $large) {
     .globalWrapper {

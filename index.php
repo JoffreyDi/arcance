@@ -46,7 +46,7 @@
         <div class="card-content-row-link">
           <div class="row">
             <div class="article-bloc col-L4 col-M6 col-S12">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -57,7 +57,7 @@
               </a>
             </div>
             <div class="article-bloc col-L4 col-M6 col-S12">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -68,7 +68,7 @@
               </a>
             </div>
             <div class="article-bloc col-L4 col-M6 col-S12">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -79,7 +79,7 @@
               </a>
             </div>
             <div class="article-bloc col-L4 col-M6 col-S12">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -90,7 +90,7 @@
               </a>
             </div>
             <div class="article-bloc col-L4 col-M6 col-S12">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -101,7 +101,7 @@
               </a>
             </div>
             <div class="article-bloc col-L4 col-M6 col-S12">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -120,7 +120,7 @@
           <h2 class="card-title">vitrine</h2>
           <div class="card-content-row-link">
             <div class=" article-bloc row-nowrap">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -131,7 +131,7 @@
               </a>
             </div>
             <div class="article-bloc row-nowrap">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -142,7 +142,7 @@
               </a>
             </div>
             <div class="article-bloc row-nowrap">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -158,7 +158,7 @@
           <h2 class="card-title">vitrine</h2>
           <div class="card-content-row-link">
             <div class=" article-bloc row-nowrap">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -169,7 +169,7 @@
               </a>
             </div>
             <div class="article-bloc row-nowrap">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>
@@ -180,7 +180,7 @@
               </a>
             </div>
             <div class="article-bloc row-nowrap">
-            <a href="#">
+            <a href="produit.php">
               <img src="assets/products/product-placeholder.jpg">
               <div class="article-infos">
                 <div class="article-title">Set memos autocollants eastmateus...</div>

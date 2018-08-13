@@ -21,7 +21,7 @@ button {
     }
     &:disabled {
         background: #ccc;
-        color: #ff00cc;
+        color: $steel;
         cursor: not-allowed;
     }
 }
@@ -39,7 +39,7 @@ button {
     }
     &:disabled {
         background: #ccc;
-        color: #ff00cc;
+        color: $steel;
         cursor: not-allowed;
     }
 }
@@ -59,7 +59,7 @@ button {
     }
     &:disabled {
         background: #ccc;
-        color: #ff00cc;
+        color: $steel;
         cursor: not-allowed;
     }
 }
@@ -83,7 +83,7 @@ button {
 
 
 
-
+// Redesign UPLOAD buttons
 .input-file-container {
     position: relative;
 }

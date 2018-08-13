@@ -21,7 +21,9 @@
 
     <!-- Modal content -->
     <div class="modal-content-mini">
-      <span class="close">&times;</span>
+    <span class="close">
+        <i class="material-icons md-dark">close</i>
+      </span>
       <div class="modal-title">
       <h1>Le BAT est-il valide ?</h1>
       <button class="button-classic">Télécharger le BAT</button>

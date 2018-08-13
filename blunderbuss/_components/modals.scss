@@ -25,10 +25,19 @@
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* 15% from the top and centered */
+    margin: 5% auto;
     padding: 40px;
     border: 1px solid #888;
-    width: 70%; /* Could be more or less, depending on screen size */
+    width: 70%;
+    h2 {
+        text-transform: uppercase;
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid $pearl-grey;
+        margin-bottom: 20px;
+    }
+    .form-card {
+        padding: 0 0 60px 0 !important;
+    }
 }
 
 .modal-content-mini {
@@ -38,10 +47,10 @@
 
 /* The Close Button */
 .close {
-    color: #aaa;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
+    .material-icons {
+        font-size: 3.4rem;
+    }
 }
 
 .close:hover,

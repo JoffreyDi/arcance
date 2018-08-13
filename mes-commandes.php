@@ -26,40 +26,39 @@
 
       <h3 class="d_active tab_drawer_heading" rel="tab1">vos devis</h3>
       <section id="tab1" class="tab_content">
-        <?php include 'mes-commandes--tab1.php'; ?>
+        <?php include 'includes/mes-commandes--tab1.php'; ?>
       </section>
       <!-- #tab1 -->
 
 
       <h3 class="tab_drawer_heading" rel="tab2">vos facture</h3>
       <section id="tab2" class="tab_content">
-      <?php include 'mes-commandes--tab2.php'; ?>
+      <?php include 'includes/mes-commandes--tab2.php'; ?>
       </section>
       <!-- #tab2 -->
 
 
       <h3 class="tab_drawer_heading" rel="tab3">vos livraisons</h3>
       <section id="tab3" class="tab_content">
-      <?php include 'mes-commandes--tab3.php'; ?>
+      <?php include 'includes/mes-commandes--tab3.php'; ?>
       </section>
       <!-- #tab3 -->
 
      <h3 class="tab_drawer_heading" rel="tab4">adresse de facturation</h3>
       <section id="tab4" class="tab_content">
-      <?php include 'mes-commandes--tab4.php'; ?>
+      <?php include 'includes/mes-commandes--tab4.php'; ?>
       </section>
 
-
-
     </div>
+    <?php include 'footer.php'; ?>
     <!-- .tab_container -->
   </div>
+  
   <script src="js/jquery.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/upload.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/modals.js"></script>
-  <?php include 'footer.php'; ?>
   </body>
 
   </html>

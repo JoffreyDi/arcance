@@ -186,6 +186,10 @@ input:checked+.slider {
     background-color: $shamrock;
 }
 
+input:disabled+.slider {
+    opacity: 0.2;
+}
+
 input:focus+.slider {
     box-shadow: 0 0 1px $shamrock;
 }

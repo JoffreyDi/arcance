@@ -74,77 +74,92 @@ header {
     }
 }
 
-.myaccount {
-    .myaccount-avatar {
-        height: 88px;
-        width: 88px;
-        background: $yellow-submarine;
-        border-radius: 100px;
-        margin: 0 auto 20px auto;
-        display: flex;
-        align-items: center;
-        .stand-number {
-            font-size: 2.2rem;
-            color: $chocolate;
-            display: block;
-            width: auto;
-            width: 100%;
-            text-align: center;
-        }
+.myaccount-avatar {
+    height: 88px;
+    width: 88px;
+    background: $yellow-submarine;
+    border-radius: 100px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    .stand-number {
+        font-size: 2.2rem;
+        color: $chocolate;
+        display: block;
+        width: auto;
+        width: 100%;
+        text-align: center;
     }
-    .myaccount-select {
-        color: $white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
+}
+
+.stand-name {
+    font-weight:$weight-semibold;
+    color: $white;
+    text-align: center;
+}
+
+.stand-resume {
+    font-size:$font-size-small;
+    color: $white;
+    text-align: center;
+    color: $steel;
+    padding: 10px 0 0 0;
+}
+
+
+.myaccount-select {
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+    &:hover {
+        color: $yellow-submarine;
         transition: all 0.1s ease-out;
-        &:hover {
+        .material-icons {
             color: $yellow-submarine;
-            transition: all 0.1s ease-out;
-            .material-icons {
-                color: $yellow-submarine;
+        }
+    }
+}
+
+.user-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    background-color: $yellow-submarine;
+    display: none;
+    .user-panel-content {
+        color: $chocolate;
+        padding: 20px;
+        p {
+            border-bottom: 1px solid $chocolate;
+            font-size: $font-size-small;
+            padding: 0 0 20px 0;
+        }
+        a {
+            color: $chocolate;
+            &:hover {
+                color: $black-star;
             }
         }
     }
-    .user-panel {
+    .close-panel {
         position: absolute;
+        width: 30px;
+        height: 30px;
         top: 0;
-        left: 0;
-        width: 240px;
-        background-color: $yellow-submarine;
-        display: none;
-        .user-panel-content {
+        right: 0;
+        padding: 3px;
+        background: $yellow-submarine;
+        text-align: center;
+        cursor: pointer;
+        .material-icons {
             color: $chocolate;
-            padding: 20px;
-            p {
-                border-bottom: 1px solid $chocolate;
-                font-size: $font-size-small;
-                padding: 0 0 20px 0;
-            }
-            a {
-                color: $chocolate;
-                &:hover {
-                    color: $black-star;
-                }
-            }
         }
-        .close-panel {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            top: 0;
-            right: 0;
-            padding: 3px;
-            background: $yellow-submarine;
-            text-align: center;
-            cursor: pointer;
-            .material-icons {
-                color: $chocolate;
-            }
-            &:hover {
-                background: $yellow-hover;
-            }
+        &:hover {
+            background: $yellow-hover;
         }
     }
 }
@@ -172,25 +187,25 @@ aside {
     }
     .main-link {
         a {
-        height: 45px;
-        color: $steel;
-        display: flex;
-        align-items: center;
-        padding: 0 20px 0 20px;
-        border-left: 0px solid;
-        transition: all 0.1s ease-out;
-        text-decoration: none;
-        &:hover {
-            cursor: pointer;
-            color: $white;
-            border-left: 3px solid $yellow-submarine;
-            background-color: $slate;
-            transition: all 0.3s ease-out;
-            .material-icons {
-                color: $yellow-submarine;
+            height: 45px;
+            color: $steel;
+            display: flex;
+            align-items: center;
+            padding: 0 20px 0 20px;
+            border-left: 0px solid;
+            transition: all 0.1s ease-out;
+            text-decoration: none;
+            &:hover {
+                cursor: pointer;
+                color: $white;
+                border-left: 3px solid $yellow-submarine;
+                background-color: $slate;
+                transition: all 0.3s ease-out;
+                .material-icons {
+                    color: $yellow-submarine;
+                }
             }
         }
-    }
     }
     .aside-bloc-infos {
         position: fixed;
@@ -229,7 +244,6 @@ aside {
     transition: 0.2ms;
     margin-left: 0;
 }
-
 
 .burger-button {
     display: none;
@@ -387,14 +401,13 @@ aside {
     }
 }
 
-@media (max-height:768px) {
-
+@media (max-height:590px) {
     aside {
         overflow-x: auto;
         nav {
-           .nav-links {
-               margin: 0 0 0 0;
-           }
+            .nav-links {
+                margin: 0 0 0 0;
+            }
         }
         .aside-bloc-infos {
             position: inherit !important;
