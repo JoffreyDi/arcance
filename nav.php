@@ -172,7 +172,11 @@
             <input type="text" placeholder="Rechercher dans la boutique">
           </div>
         </div>
-        <i class="header-link icon-shopping-card align-item-center material-icons md-dark">shopping_cart</i>
+        <div class="header-link icon-shopping-card relative  align-item-center ">
+        <i class="material-icons md-dark ">shopping_cart
+        </i>
+        <span class="pastille-red">4</span>
+</div>
       </div>
     </div>
   </div>
@@ -208,18 +212,17 @@
   <nav>
     <ul class="nav-links">
       <li class="main-link">
-        <a href="index.php"><i class="material-icons md-dark">shopping_basket</i>Boutique
-              <span class="pastille-green flex-end"><i class="material-icons md-dark">check</i></span></a></li>
+        <a href="index.php"><i class="material-icons md-dark">shopping_basket</i>Boutique</a></li>
       <li class="main-link">
         <a href="mon-stand.php"><i class="material-icons md-dark">account_circle</i>Mon stand
                     <span class="pastille-green flex-end"><i class="material-icons md-dark">check</i></span></a></li>
       <li class="main-link">
         <a href="mes-commandes.php"><i class="material-icons md-dark">receipt</i>Mes commandes              
-        <span class="pastille-green flex-end"><i class="material-icons md-dark">check</i></span></a></li>
+        <span class="pastille-red flex-end"><i class="material-icons md-dark">warning</i></span></a></li>
 
       <li class="main-link">
         <a href="mes-messages.php"><i class="material-icons md-dark">mail_outline</i>Mes messages             
-         <span class="pastille-green flex-end"><i class="material-icons md-dark">check</i></span></a></li>
+         <span class="pastille-red flex-end">1</span></a></li>
 
     </ul>
 
