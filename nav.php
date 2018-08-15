@@ -16,7 +16,7 @@
         <div class="separator"></div>
 
         <div class="align-item-center categories-mobile">
-          Catégories
+          <a href="categories.php">Produits</a>
         </div>
 
 
@@ -24,7 +24,7 @@
 
           <ul>
             <li class="dropdown-select-link align-item-center ">
-              <a href="">Catégories</a>
+              <a href="">Produits</a>
               <i class="material-icons md-dark">arrow_drop_down</i>
               <ul>
                 <li>
@@ -33,10 +33,10 @@
                   </a>
                   <ul>
                     <li>
-                      <a href="">Echidnas</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Platypus</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                   </ul>
                 </li>
@@ -46,16 +46,16 @@
                   </a>
                   <ul>
                     <li>
-                      <a href="">Opossums</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Numbats, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Bandicoots, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Kangaroos, koalas, wombats, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                   </ul>
                 </li>
@@ -65,13 +65,13 @@
                   </a>
                   <ul>
                     <li>
-                      <a href="">Primates, ungulates, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Anteaters, sloths, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Elephants, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                   </ul>
                 </li>
@@ -81,13 +81,13 @@
                   </a>
                   <ul>
                     <li>
-                      <a href="">Primates, ungulates, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Anteaters, sloths, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Elephants, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                   </ul>
                 </li>
@@ -97,13 +97,13 @@
                   </a>
                   <ul>
                     <li>
-                      <a href="">Primates, ungulates, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Anteaters, sloths, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Elephants, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                   </ul>
                 </li>
@@ -113,13 +113,13 @@
                   </a>
                   <ul>
                     <li>
-                      <a href="">Primates, ungulates, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Anteaters, sloths, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                     <li>
-                      <a href="">Elephants, etc.</a>
+                      <a href="">Sous catégorie</a>
                     </li>
                   </ul>
                 </li>
@@ -208,41 +208,47 @@
   <nav>
     <ul class="nav-links">
       <li class="main-link">
-        <a href="index.php"><i class="material-icons md-dark">shopping_basket</i>Boutique</a></li>
+        <a href="index.php"><i class="material-icons md-dark">shopping_basket</i>Boutique
+              <span class="pastille-green flex-end"><i class="material-icons md-dark">check</i></span></a></li>
       <li class="main-link">
-      <a href="mon-stand.php"><i class="material-icons md-dark">account_circle</i>Mon stand</a></li>
+        <a href="mon-stand.php"><i class="material-icons md-dark">account_circle</i>Mon stand
+                    <span class="pastille-green flex-end"><i class="material-icons md-dark">check</i></span></a></li>
       <li class="main-link">
-      <a href="mes-commandes.php"><i class="material-icons md-dark">receipt</i>Mes commandes</a></li>
+        <a href="mes-commandes.php"><i class="material-icons md-dark">receipt</i>Mes commandes              
+        <span class="pastille-green flex-end"><i class="material-icons md-dark">check</i></span></a></li>
+
       <li class="main-link">
-      <a href="mes-messages.php"><i class="material-icons md-dark">mail_outline</i>Mes messages</a></li>
+        <a href="mes-messages.php"><i class="material-icons md-dark">mail_outline</i>Mes messages             
+         <span class="pastille-green flex-end"><i class="material-icons md-dark">check</i></span></a></li>
+
     </ul>
 
     <div class="content-link-mobile">
 
-        <div class="dropdown">
-            <span class="">Dropdown</span>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <span class="">Dropdown</span>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <span class="">Dropdown</span>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
+      <div class="dropdown">
+        <span class="">Dropdown</span>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <span class="">Dropdown</span>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <span class="">Dropdown</span>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
 
     </div>
 

@@ -11,6 +11,9 @@ header {
         width: 100%;
         margin: auto !important;
         padding: 0 40px 0 280px;
+        a {
+            text-decoration: none;
+        }
     }
     .search-bar {
         &:hover {
@@ -93,19 +96,18 @@ header {
 }
 
 .stand-name {
-    font-weight:$weight-semibold;
+    font-weight: $weight-semibold;
     color: $white;
     text-align: center;
 }
 
 .stand-resume {
-    font-size:$font-size-small;
+    font-size: $font-size-small;
     color: $white;
     text-align: center;
     color: $steel;
     padding: 10px 0 0 0;
 }
-
 
 .myaccount-select {
     color: $white;
@@ -187,6 +189,7 @@ aside {
     }
     .main-link {
         a {
+            position: relative;
             height: 45px;
             color: $steel;
             display: flex;
@@ -204,6 +207,19 @@ aside {
                 .material-icons {
                     color: $yellow-submarine;
                 }
+                .pastille {
+                    &:hover {
+                        .material-icons {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .pastille {
+                position: absolute;
+                right: 20px;
+                top: 13px;
+                padding-left: 3px;
             }
         }
     }
@@ -214,6 +230,7 @@ aside {
         width: 240px;
         font-size: $font-size-small;
         .aside-bloc-infos-content {
+            background: $black-star;
             padding: 20px;
             .title {
                 font-size: $font-size-base;
@@ -263,6 +280,9 @@ aside {
     .dropdown-select-link {
         width: 122px;
         color: $steel;
+        height: 60px;
+        padding: 18px 0 0 20px !important;
+        border: 0 !important;
         a {
             color: $steel;
         }
@@ -280,17 +300,27 @@ aside {
         margin: 0;
         background: #fff;
         float: left;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
     }
     li {
         position: relative;
         list-style: none;
-        padding: 17px 0 0 15px !important;
+        padding: 8px 0 8px 15px !important;
         width: 240px;
+        border-left: 0px solid $yellow-submarine;
+        transition: all 0.1s ease-out;
         a {
             text-decoration: none;
+            &:hover {
+                color: $black-star;
+            }
         }
         &:last-child {
             padding-bottom: 15px !important;
+        }
+        &:hover {
+            border-left: 3px solid $yellow-submarine;
+            transition: all 0.1s ease-out;
         }
     }
     ul ul {
@@ -313,6 +343,17 @@ aside {
 @media (max-width: $extra-large) {
     .header-contentlink {
         display: none !important;
+    }
+    aside {
+        overflow-x: auto;
+        nav {
+            .nav-links {
+                margin: 0 0 0 0;
+            }
+        }
+        .aside-bloc-infos {
+            position: inherit !important;
+        }
     }
 }
 
@@ -397,20 +438,6 @@ aside {
         }
         .header-contentlink {
             display: none !important;
-        }
-    }
-}
-
-@media (max-height:590px) {
-    aside {
-        overflow-x: auto;
-        nav {
-            .nav-links {
-                margin: 0 0 0 0;
-            }
-        }
-        .aside-bloc-infos {
-            position: inherit !important;
         }
     }
 }

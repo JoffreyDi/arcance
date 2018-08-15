@@ -29,6 +29,7 @@
     padding: 40px;
     border: 1px solid #888;
     width: 70%;
+    position: relative;
     h2 {
         text-transform: uppercase;
         padding: 0 0 20px 0;
@@ -47,9 +48,14 @@
 
 /* The Close Button */
 .close {
-    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     .material-icons {
         font-size: 3.4rem;
+        &:hover {
+            color: $black-star;
+        }
     }
 }
 

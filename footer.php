@@ -1,3 +1,3 @@
 <footer>
-<a href="">Mentions légales</a> | <a href="">Conditions générales de ventes</a> | <a href="">Avertissement</a> | © 2018 SERVICE-EXPOSANT-DEMO. All Rights Reserved.
+<a href="page-content.php">Mentions légales</a> | <a href="page-content.php">Conditions générales de ventes</a> | <a href="page-content.php">Avertissement</a> | © 2018 SERVICE-EXPOSANT-DEMO. All Rights Reserved.
 </footer>

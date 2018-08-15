@@ -72,7 +72,7 @@
 
 <div class="col-M12 card">
   <h2 class="card-title-table">éléments à valider pour la formule nue
-    <span class="pastille-red">1</span>
+    <span class="pastille-red"><i class="material-icons md-dark">warning</i></span>
   </h2>
 
   <div class="header-table row-nowrap">
@@ -129,7 +129,7 @@
 
 <div class="col-M12 card">
   <h2 class="card-title-table">plan décorateur
-    <span class="pastille-red">1</span>
+    <span class="pastille-red"><i class="material-icons md-dark">warning</i></span>
   </h2>
 
   <div class="header-table row-nowrap">
