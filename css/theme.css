@@ -626,10 +626,10 @@ q {
 
 q,
 .q {
-  quotes: "ÔÇ£" "ÔÇØ" "ÔÇÿ" "ÔÇÖ"; }
+  quotes: "“" "”" "‘" "’"; }
   q:lang(fr),
   .q:lang(fr) {
-    quotes: "┬½\00a0" "\00a0┬╗" "ÔÇ£" "ÔÇØ"; }
+    quotes: "«\00a0" "\00a0»" "“" "”"; }
 
 hr {
   display: block;
@@ -801,6 +801,9 @@ kbd {
   color: #FF5340;
   font-weight: 600;
   text-align: right; }
+
+* {
+  outline: none; }
 
 .line-form {
   margin: 0 0 20px 0; }
@@ -1385,7 +1388,7 @@ ul.tabs li.active {
     color: #fff;
     margin: 0 0 10px 0;
     padding: 15px 20px;
-    display: block;
+    display: flex;
     cursor: pointer;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -1393,11 +1396,63 @@ ul.tabs li.active {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    justify-content: space-between; }
+    .tab_drawer_heading .material-icons {
+      color: #fff; }
 
   .d_active {
     background-color: #FFD100;
-    color: #8F6932; } }
+    color: #8F6932; }
+    .d_active .material-icons {
+      transform: rotate(90deg);
+      color: #8F6932; } }
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  right: 40px;
+  top: 80px; }
+
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+
+@-webkit-keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0; }
+  to {
+    top: 80px;
+    opacity: 1; } }
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0; }
+  to {
+    top: 80px;
+    opacity: 1; } }
+@-webkit-keyframes fadeout {
+  from {
+    top: 80px;
+    opacity: 1; }
+  to {
+    top: 0;
+    opacity: 0; } }
+@keyframes fadeout {
+  from {
+    top: 80px;
+    opacity: 1; }
+  to {
+    top: 0;
+    opacity: 0; } }
 h1 {
   margin-bottom: 5px; }
 
@@ -1512,6 +1567,7 @@ header {
   top: 0;
   left: 0;
   width: 240px;
+  z-index: 9999;
   background-color: #FFD100;
   display: none; }
   .user-panel .user-panel-content {
@@ -1863,6 +1919,8 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .login-container a {
+    text-decoration: none; }
   .login-container .row, .login-container .row-stand {
     max-width: 300px;
     flex-direction: column; }

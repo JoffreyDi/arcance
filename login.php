@@ -16,7 +16,7 @@
     <div class="line-form">
       <input type="password" placeholder="Mot de passe">
     </div>
-    <button class="button-special">S'identifier</button>
+    <a href="choix-stand.php"><button class="button-special">S'identifier</button></a>
   </div>
 </section>
 

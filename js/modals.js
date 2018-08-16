@@ -28,11 +28,29 @@ window.onclick = function(event) {
 
 
   $( ".display-textarea" ).click(function() {
-    $( ".textarea-bloc" ).show( "slow", function() {
+    $( ".textarea-bloc" ).show( 1, function() {
+    });
+    $( ".reply-button" ).hide( 1, function() {
     });
   });
 
+
   $( ".hide-textarea" ).click(function() {
-    $( ".textarea-bloc" ).hide( "slow", function() {
+    $( ".textarea-bloc" ).hide( 1, function() {
+    });
+  });
+
+
+  $( ".display-textarea" ).click(function() {
+    $( ".textarea-bloc" ).show( 1, function() {
+    });
+    $( ".form-bloc" ).hide( 1, function() {
+    });
+  });
+
+  $( ".display-form" ).click(function() {
+    $( ".textarea-bloc" ).hide( 1, function() {
+    });
+    $( ".form-bloc" ).show( 1, function() {
     });
   });

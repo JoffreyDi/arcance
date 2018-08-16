@@ -133,35 +133,35 @@
       <div class="infos-section align-item-center flex-end">
 
         <div class="dropdown">
-          <span class="header-contentlink">Dropdown</span>
+          <span class="header-contentlink">Section 1</span>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Contenu 1</a>
+            <a href="#">Contenu 2</a>
+            <a href="#">Contenu 3</a>
           </div>
         </div>
         <div class="dropdown">
-          <span class="header-contentlink">Dropdown</span>
+          <span class="header-contentlink">Section 2</span>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Contenu 1</a>
+            <a href="#">Contenu 2</a>
+            <a href="#">Contenu 3</a>
           </div>
         </div>
         <div class="dropdown">
-          <span class="header-contentlink">Dropdown</span>
+          <span class="header-contentlink">Section 3</span>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Contenu 1</a>
+            <a href="#">Contenu 2</a>
+            <a href="#">Contenu 3</a>
           </div>
         </div>
         <div class="dropdown">
           <span class="header-link align-item-center ero ">FR</span>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Français</a>
+            <a href="#">Anglais</a>
+            <a href="#">Espagnol</a>
           </div>
         </div>
 
@@ -173,10 +173,12 @@
           </div>
         </div>
         <div class="header-link icon-shopping-card relative  align-item-center ">
-        <i class="material-icons md-dark ">shopping_cart
-        </i>
-        <span class="pastille-red">4</span>
-</div>
+          <a class="flex" href="panier.php">
+            <i class="material-icons md-dark ">shopping_cart
+            </i>
+            <span class="pastille-red">4</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -198,9 +200,9 @@
       <div class="user-panel-content">
         EXPOSANT DEMO
         <p>G56 / 12 m2 (3.00x4.00m) Formule EQUIPE</p>
-        <a href=""> Modifier mes coordonnées</a>
-        <a href=""> Changer de stand</a>
-        <a href=""> Déconnexion</a>
+        <a href="mes-coordonnees.php"> Modifier mes coordonnées</a>
+        <a href="choix-stand.php"> Changer de stand</a>
+        <a href="login.php"> Déconnexion</a>
       </div>
       <div class="close-panel">
         <i class="material-icons md-dark">close</i>
@@ -212,44 +214,59 @@
   <nav>
     <ul class="nav-links">
       <li class="main-link">
-        <a href="index.php"><i class="material-icons md-dark">shopping_basket</i>Boutique</a></li>
+        <a href="index.php">
+          <i class="material-icons md-dark">shopping_basket</i>Boutique</a>
+      </li>
       <li class="main-link">
-        <a href="mon-stand.php"><i class="material-icons md-dark">account_circle</i>Mon stand
-                    <span class="pastille-green flex-end"><i class="material-icons md-dark">check</i></span></a></li>
+        <a href="mon-stand.php">
+          <i class="material-icons md-dark">account_circle</i>Mon stand
+          <span class="pastille-green flex-end">
+            <i class="material-icons md-dark">check</i>
+          </span>
+        </a>
+      </li>
       <li class="main-link">
-        <a href="mes-commandes.php"><i class="material-icons md-dark">receipt</i>Mes commandes              
-        <span class="pastille-red flex-end"><i class="material-icons md-dark">warning</i></span></a></li>
+        <a href="mes-commandes.php">
+          <i class="material-icons md-dark">receipt</i>Mes commandes
+          <span class="pastille-red flex-end">
+            <i class="material-icons md-dark">warning</i>
+          </span>
+        </a>
+      </li>
 
       <li class="main-link">
-        <a href="mes-messages.php"><i class="material-icons md-dark">mail_outline</i>Mes messages             
-         <span class="pastille-red flex-end">1</span></a></li>
+        <a href="mes-messages.php">
+          <i class="material-icons md-dark">mail_outline</i>Mes messages
+          <span class="pastille-red flex-end">1</span>
+        </a>
+      </li>
 
     </ul>
 
     <div class="content-link-mobile">
 
       <div class="dropdown">
-        <span class="">Dropdown</span>
+        <span class="">Section 1</span>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Contenu 1</a>
+          <a href="#">Contenu 2</a>
+          <a href="#">Contenu 3</a>
         </div>
       </div>
       <div class="dropdown">
-        <span class="">Dropdown</span>
+        <span class="">Section 2</span>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Contenu 1</a>
+          <a href="#">Contenu 2</a>
+          <a href="#">Contenu 3</a>
         </div>
       </div>
       <div class="dropdown">
-        <span class="">Dropdown</span>
+        <span class="">Section 3</span>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Contenu 1</a>
+          <a href="#">Contenu 2</a>
+          <a href="#">Contenu 3</a>
         </div>
       </div>
 

@@ -4,13 +4,13 @@
 <div id="globalWrapper" class="globalWrapper">
   <div class="contentWrapper">
     <div class="title-page">
-      <h1>Catégorie Offre Packagé</h1>
-      <a href="index.php">Accueil boutique »</a> Catégorie offre packagé
+      <h1>Panier</h1>
+      Gérez les articles de votre panier
     </div>
 
     <section class="row row-card flex-start">
       <div class="col-L8 col-M12 card">
-        <h2 class="card-title">Liste des articles dans la catégorie</h2>
+        <h2 class="card-title">vos articles</h2>
         <div class="card-content-row-link">
           <div class="article-bloc row-nowrap">
             <img src="assets/products/product-placeholder.jpg">
@@ -26,7 +26,7 @@
 
               <div class="buy-bloc flex-end">
                 <div class="article-price">484,24 €</div>
-                <button class="button-classic">ajouter au panier</button>
+                <button class="button-classic">supprimer</button>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
 
               <div class="buy-bloc flex-end">
                 <div class="article-price">484,24 €</div>
-                <button class="button-classic">ajouter au panier</button>
+                <button class="button-classic">supprimer</button>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@
               <span class="price">234,19€</span>
             </div>
           </div>
-          <button class="button-special">payer ma commande</button>
+          <a href="facturation.php"><button class="button-special">payer ma commande</button></a>
           <button class="button-special secondary">Poursuivre mes achats</button>
 
 

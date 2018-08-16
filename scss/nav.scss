@@ -130,6 +130,7 @@ header {
     top: 0;
     left: 0;
     width: 240px;
+    z-index: 9999;
     background-color: $yellow-submarine;
     display: none;
     .user-panel-content {

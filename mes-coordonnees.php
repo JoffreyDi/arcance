@@ -4,13 +4,13 @@
 <div id="globalWrapper" class="globalWrapper">
   <div class="contentWrapper">
     <div class="title-page">
-      <h1>Vos informations de facturation</h1>
-      <a href="panier.php">Panier »</a> Informations de facturation
+      <h1>Mes coordonnées</h1>
+      Vérifiez ou modifiez vos données personnelles.
     </div>
 
     <section class="row row-card flex-start">
       <div class="col-L8 col-M12 card">
-        <h2 class="card-title">Informations de facturation</h2>
+        <h2 class="card-title">mes coordonnées</h2>
         <div class="card-content form-card">
 
           <div class="line-form">
@@ -99,7 +99,7 @@
             <input type="text">
           </div>
 
-          <a href="options-paiement.php"><button class="button-action">Valider le formulaire</button></a>
+          <button class="button-action">Valider le formulaire</button>
         </div>
 
       </div>

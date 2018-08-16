@@ -37,3 +37,18 @@
 	   of last tab */
 	$('ul.tabs li').last().addClass("tab_last");
 	
+
+
+// Fonction exécutée au redimensionnement
+function redimensionnement() {
+  var result = document.getElementById('result');
+  if("matchMedia" in window) { // Détection
+    if(window.matchMedia("(max-width:768px)").matches) {
+      $(".tab_content:first").hide();
+    } else {
+      $(".tab_content:first").show();
+    }
+  }
+}
+// On lie l'événement resize à la fonction
+window.addEventListener('resize', redimensionnement, false);

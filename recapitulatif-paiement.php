@@ -6,42 +6,24 @@
     <div class="title-page">
       <h1>Options de paiement </h1>
       <a href="panier.php">Panier »</a>
-      <a href="facturation.php">Informations de facturation » </a>Options de paiement
+      <a href="facturation.php">Informations de facturation » </a>
+      <a href="options-paiement.php">Options de paiement</a> » Paiement
     </div>
 
     <section class="row row-card flex-start">
       <div class="col-L8 col-M12 card">
         <h2 class="card-title flex spaceBetween">
-          <span>CHOISISSEZ VOTRE MOYEN DE PAIEMENT</span>
+          <span>paiement</span>
         </h2>
         <div class="card-content">
 
-          <label class="line-radio">Par carte bancaire
-            <input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-          <label class="line-radio">Par virement bancaire
-            <br/>Les coordonnées bancaires pour votre paiement sont inscrites au pied de la facture. Veuillez préciser le n° de
-            votre facture en référence de votre paiement
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-          </label>
-          <label class="line-radio">Par chèque d’une banque en France
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-          </label>
+          <p>Numéro de commande : 484
+            <br /> Référence : SALON DEMO-G56-180528</p>
 
-          <div class="card-checkout">
-            <div class="flex-end align-item-center">
-              <label class="checkbox-line">J’accepte les conditions générales de vente
-                <input type="checkbox" checked="checked">
-                <span class="checkmarkbox"></span>
-              </label>
-            </div>
-            <div class="flex-end">
-              <a href="recapitulatif-paiement.php" style="min-width:240px;"><button class="button-special">payer ma commande</button></a>
-            </div>
-          </div>
+          <p>Vous allez être redirigé vers le serveur de paiement en ligne sécurisé.</p>
+
+          <p>Merci de sélectionner une carte de paiement ci-dessous :</p>
+
         </div>
 
       </div>

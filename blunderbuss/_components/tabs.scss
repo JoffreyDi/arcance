@@ -61,7 +61,7 @@ ul.tabs li.active {
 		color: $white;
 		margin: 0 0 10px 0;
 		padding: 15px 20px;
-		display: block;
+		display: flex;
 		cursor: pointer;
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
@@ -69,11 +69,18 @@ ul.tabs li.active {
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-
 		text-transform: uppercase;
+		justify-content: space-between;
+		.material-icons {
+			color: $white;
+		}
 	}
 	.d_active {
 		background-color: $yellow-submarine;
 		color: $chocolate;
+		.material-icons {
+			transform: rotate(90deg);
+			color: $chocolate;
+		}
 	}
 }
