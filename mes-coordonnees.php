@@ -9,7 +9,7 @@
     </div>
 
     <section class="row row-card flex-start">
-      <div class="col-L8 col-M12 card">
+      <div class="col-L12 col-M12 card">
         <h2 class="card-title">mes coordonnées</h2>
         <div class="card-content form-card">
 
@@ -105,36 +105,6 @@
       </div>
 
 
-      <div class="col-L4 col-M12 card bloc-details">
-        <h2 class="card-title">Récapitulatif</h2>
-        <div class="card-content">
-
-          <div class="row border spaceBetween">
-            <span class="steel">Panier (2 articles)</span>
-            <span class="strong">234,19€</span>
-          </div>
-
-          <div class="row border spaceBetween">
-            <span class="steel">Panier (2 articles)</span>
-            <span class="strong">234,19€</span>
-          </div>
-
-          <div class="row border spaceBetween">
-            <span class="steel">Panier (2 articles)</span>
-            <span class="strong">234,19€</span>
-          </div>
-
-          <div class="row spaceBetween">
-            <span class="steel">Panier (2 articles)</span>
-            <span class="strong">234,19€</span>
-          </div>
-
-          <div class="row border spaceBetween">
-            <span class="black strong">PRIX TOTAL (TTC)</span>
-            <span class="strong">234,19€</span>
-          </div>
-        </div>
-      </div>
     </section>
 
 

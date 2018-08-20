@@ -1,5 +1,5 @@
 <div class="col-M12 card">
-  <h2 class="card-title-table">liste de vos facture</h2>
+  <h2 class="card-title-table">liste de vos factures</h2>
 
   <div class="header-table row-nowrap">
     <div class="col-L1 col-M12">Référence</div>
@@ -19,7 +19,7 @@
       <div class="col-L2 col-M12">30/05/2018</div>
       <div class="col-L2 col-M12">2 932,42€</div>
       <div class="col-L3 col-M12 actions-statut-line">
-      <span class="status-good">payée le 25/12/2018 </span>
+        <button class="button-action">Payer la facture</button>
       </div>
     </div>
 

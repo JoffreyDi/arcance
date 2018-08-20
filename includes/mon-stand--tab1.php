@@ -153,14 +153,22 @@
       </div>
     </div>
 
-    <div class="row-nowrap">
-      <div class="col-L3 col-M12">Plan décorateur</div>
-      <div class="col-L6 col-M12">Merci de déposer le plan décorateur</div>
-      <div class="col-L3 col-M12 actions-statut-line">
-        <i class="material-icons md-dark">close</i>
-        <i class="material-icons md-dark">remove_red_eye</i>
-        <span class="status-good">PLAN DÉPOSÉ LE 25/12/2018 </span>
 
+    <!-- Cette ligne ne s'affiche que si l'utilisateur est un exposant -->
+    <div class="row-nowrap">
+      <div class="col-L3 col-M12">Je déclare mon décorateur</div>
+      <div class="col-L6 col-M12">Merci de renseigner si vous avez un standiste décorateur pour votre stand</div>
+      <div class="col-L3 col-M12 actions-statut-line">
+      <button class="button-action">Déclarer un décorateur</button>
+      </div>
+    </div>
+
+    <!-- Cette ligne ne s'affiche que si l'utilisateur est un décorateur -->
+    <div class="row-nowrap">
+      <div class="col-L3 col-M12">Mandat de décorateur</div>
+      <div class="col-L6 col-M12">Merci de renseigner votre mandat de décorateur</div>
+      <div class="col-L3 col-M12 actions-statut-line">
+      <button class="button-action">Renseigner mon mandat</button>
       </div>
     </div>
 

@@ -13,7 +13,7 @@
       <li class="active" rel="tab1">vos devis
         <span class="pastille-red">1</span>
       </li>
-      <li rel="tab2">vos facture
+      <li rel="tab2">vos factures
       </li>
       <li rel="tab3">vos livraisons
         <span class="pastille-green">1</span>

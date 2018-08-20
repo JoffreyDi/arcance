@@ -13,7 +13,7 @@
 
 <body>
 
-  <button class="button-action" id="open-modal">Signer le document</button>
+  <button class="button-action" id="open-modal">Déclarer un décorateur</button>
 
 
   <!-- The Modal -->
@@ -25,28 +25,41 @@
         <i class="material-icons md-dark">close</i>
       </span>
       <div class="modal-title">
-        <h1>Déclarez votre standiste / décorateur</h1>
+        <h1>Déclarer mon décorateur</h1>
       </div>
-      <p>Merci de renseigner les champs ci-dessous pour associer votre standiste décorateur à votre projet de stand ; dés réception
-        des informations par nos services, votre décorateur recevra des accès à la plateforme pour gérer votre projet</p>
-      <h2>VEUILLEZ REMPLIR LES CHAMPS CI DESSOUS</h2>
 
-      <div class="card-content form-card">
+      <label class="line-radio display-textarea">Je n'ai pas de standiste décorateur pour mon stand
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="line-radio display-form"> J'ai un standiste décorateur pour mon stand et souhaite le déclarer
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
 
-        <div class="row">
-          <div class="line-form">
-            <label>Société</label>
-            <input type="text">
+      <div class="textarea-bloc form-card" style="display: block;">
+        <button class="button-action">Valider</button>
+      </div>
+
+      <div class="form-bloc form-card"  style="display: none;">
+        <p>Merci de renseigner les champs ci-dessous pour associer votre standiste décorateur à votre projet de stand ; dés
+          réception des informations par nos services, votre décorateur recevra des accès à la plateforme pour gérer votre
+          projet</p>
+
+          <div class="row">
+            <div class="line-form">
+              <label>Société *</label>
+              <input type="text">
+            </div>
+            <div class="line-form">
+              <label>Type de société *</label>
+              <input type="text">
+            </div>
           </div>
-          <div class="line-form">
-            <label>type de Société</label>
-            <input type="text">
-          </div>
-        </div>
 
         <div class="line-form">
-          <label>Civilité</label>
-          <select id="civilite" name="civilite">
+          <label>Civilité *</label>
+          <select id="civilite" name="civilite" placeholder="Choisissez">
             <option value="Mr">Monsieur</option>
             <option value="Mme">Madame</option>
           </select>
@@ -54,19 +67,25 @@
 
         <div class="row">
           <div class="line-form">
-            <label>Nom</label>
+            <label>Nom *</label>
             <input type="text">
           </div>
           <div class="line-form">
-            <label>Prénom</label>
+            <label>Prénom *</label>
             <input type="text">
           </div>
         </div>
 
 
+        <div class="line-form">
+          <label>TVA Intracommunautaire</label>
+          <input type="text">
+        </div>
+
+
         <div class="row">
           <div class="line-form">
-            <label>Adresse</label>
+            <label>Adresse *</label>
             <input type="text">
           </div>
           <div class="line-form">
@@ -77,7 +96,7 @@
 
         <div class="row">
           <div class="line-form">
-            <label>Code Postal</label>
+            <label>Code postal</label>
             <input type="text">
           </div>
           <div class="line-form">
@@ -86,15 +105,16 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="line-form">
-            <label>Pays</label>
-            <input type="text">
-          </div>
+        <div class="line-form">
+          <label>Pays</label>
+          <select id="pays" name="pays">
+            <option value="fr">France</option>
+            <option value="es">Espagne</option>
+          </select>
         </div>
 
         <div class="line-form">
-          <label> TVA Intracommunautaire</label>
+          <label>TVA Intracommunautaire</label>
           <input type="text">
         </div>
 
@@ -117,8 +137,6 @@
 
         <button class="button-action">Envoyer et valider</button>
       </div>
-
-
 
     </div>
 

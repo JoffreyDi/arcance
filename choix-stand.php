@@ -16,7 +16,10 @@
       <span class="stand-number">G65</span>
     </div>
     <span class="stand-name">Salon du transport Public 2018</span>
-    <span class="stand-resume">Paris - Porte de Versailles 01/01/2019 - 07/01/2019</span>
+    <span class="stand-resume">
+    Nom de l'exposant<br />
+    Paris - Porte de Versailles 01/01/2019 - 07/01/2019
+    </span>
   </div>
 </a>
 
@@ -25,7 +28,10 @@
       <span class="stand-number">G65</span>
     </div>
     <span class="stand-name">Salon du transport Public 2018</span>
-    <span class="stand-resume">Paris - Porte de Versailles 01/01/2019 - 07/01/2019</span>
+    <span class="stand-resume">
+    Nom de l'exposant<br />
+    Paris - Porte de Versailles 01/01/2019 - 07/01/2019
+    </span>
   </div>
 
   <div class="row-stand">
@@ -37,7 +43,6 @@
 
 </section>
 
-<?php include 'footer.php'; ?>
 </body>
 
 </html>

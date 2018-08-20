@@ -626,10 +626,10 @@ q {
 
 q,
 .q {
-  quotes: "“" "”" "‘" "’"; }
+  quotes: "ÔÇ£" "ÔÇØ" "ÔÇÿ" "ÔÇÖ"; }
   q:lang(fr),
   .q:lang(fr) {
-    quotes: "«\00a0" "\00a0»" "“" "”"; }
+    quotes: "┬½\00a0" "\00a0┬╗" "ÔÇ£" "ÔÇØ"; }
 
 hr {
   display: block;
@@ -1371,7 +1371,7 @@ ul.tabs li.active {
   clear: both;
   float: left;
   width: 100%;
-  overflow: auto; }
+  overflow: hidden; }
 
 .tab_content {
   display: none; }

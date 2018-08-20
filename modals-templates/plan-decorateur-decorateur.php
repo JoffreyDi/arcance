@@ -27,25 +27,25 @@
       <div class="modal-title">
         <h1>Déclarez votre mandat</h1>
       </div>
-      <p>Merci de renseigner les champs ci-dessous pour déclarer votre mandat de gestion de projet de stand de votre client exposant ; dés réception des informations par nos services, vous recevrez des des accès à la plateforme pour préparer la participation de votre client et gérer son projet de stand</p>
+      <p>Merci de renseigner les champs ci-dessous pour déclarer votre mandat de gestion de projet de stand de votre client exposant ; dés réception des informations par nos services, vous recevrez des accès à la plateforme pour préparer la participation de votre client et gérer son projet de stand</p>
       <h2>VEUILLEZ REMPLIR LES CHAMPS CI DESSOUS</h2>
 
       <div class="card-content form-card">
 
-        <div class="row">
-          <div class="line-form">
-            <label>Société</label>
-            <input type="text">
+      <div class="row">
+            <div class="line-form">
+              <label>Société *</label>
+              <input type="text">
+            </div>
+            <div class="line-form">
+              <label>Type de société *</label>
+              <input type="text">
+            </div>
           </div>
-          <div class="line-form">
-            <label>type de Société</label>
-            <input type="text">
-          </div>
-        </div>
 
         <div class="line-form">
-          <label>Civilité</label>
-          <select id="civilite" name="civilite">
+          <label>Civilité *</label>
+          <select id="civilite" name="civilite" placeholder="Choisissez">
             <option value="Mr">Monsieur</option>
             <option value="Mme">Madame</option>
           </select>
@@ -53,19 +53,25 @@
 
         <div class="row">
           <div class="line-form">
-            <label>Nom</label>
+            <label>Nom *</label>
             <input type="text">
           </div>
           <div class="line-form">
-            <label>Prénom</label>
+            <label>Prénom *</label>
             <input type="text">
           </div>
         </div>
 
 
+        <div class="line-form">
+          <label>TVA Intracommunautaire</label>
+          <input type="text">
+        </div>
+
+
         <div class="row">
           <div class="line-form">
-            <label>Adresse</label>
+            <label>Adresse *</label>
             <input type="text">
           </div>
           <div class="line-form">
@@ -76,7 +82,7 @@
 
         <div class="row">
           <div class="line-form">
-            <label>Code Postal</label>
+            <label>Code postal</label>
             <input type="text">
           </div>
           <div class="line-form">
@@ -85,15 +91,16 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="line-form">
-            <label>Pays</label>
-            <input type="text">
-          </div>
+        <div class="line-form">
+          <label>Pays</label>
+          <select id="pays" name="pays">
+            <option value="fr">France</option>
+            <option value="es">Espagne</option>
+          </select>
         </div>
 
         <div class="line-form">
-          <label> TVA Intracommunautaire</label>
+          <label>TVA Intracommunautaire</label>
           <input type="text">
         </div>
 
@@ -116,9 +123,7 @@
 
         <button class="button-action">Envoyer et valider</button>
       </div>
-
-
-
+      
     </div>
 
     <script src="../js/jquery.js"></script>
