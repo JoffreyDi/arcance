@@ -106,6 +106,13 @@
             <button class="button-action">Valider</button>
           </div>
         </div>
+        <div class="line-form">
+            <label>Poids (en kl)</label>
+            <div class="flex">
+              <input type="text" placeholder="">
+              <button class="button-action">Valider</button>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -115,13 +122,7 @@
         Déclarez le poids supporté par ce point d’élingue
       </div>
       <div class="col-L3 col-M12 actions-statut-line">
-          <div class="line-form">
-            <label>Poids (en kl)</label>
-            <div class="flex">
-              <input type="text" placeholder="">
-              <button class="button-action">Valider</button>
-            </div>
-          </div>
+
         </div>
     </div>
 
